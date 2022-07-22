@@ -1,0 +1,2601 @@
+/* * y body */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.body-index {
+  background-image: url(../assets/SpursBackGroundSAS.jpg);
+  background-position: center;
+  background-repeat: round;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.body-bibliografia{
+  background-image: url(../assets/spursBackGroudFiestaStyle.jpg);
+  background-position: center;
+  background-repeat: round;
+  background-size: cover;
+  background-attachment: fixed;  
+  width: 100%;
+}
+
+.body-fanshots {
+  background-image: url(../assets/backGroudCoyote.jpg);
+  background-position: center;
+  background-repeat: round;
+  background-size: cover;
+  background-attachment: fixed; 
+ 
+}
+
+.body-fanposts {
+  background-image: url(../assets/big3Background.jpg);
+  background-position: center;
+  background-repeat: round;
+  background-size: cover;
+  background-attachment: fixed; 
+}
+
+.body-producto {
+  background-image: url(../assets/backGround-Productos.jpg);
+  background-position: center;
+  background-repeat: round;
+  background-size: cover;
+  background-attachment: fixed; 
+}
+
+.body-contacto {
+  background-image: url(../assets/BackgroundCoyoteDunk.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;;
+  background-attachment: fixed; 
+}
+
+
+/*---------------------------------------------------------------*/
+/*Inicio del Header responsive*/
+/*nav HAMBURGUESA*/
+
+  .nav__container {
+    display: flex;
+    height: 45px;
+    width: 100%;
+    margin: 0 auto;
+    flex-direction: column;
+    align-items: flex-end;
+    position: relative;
+    z-index: 1;
+    background-color: #fff;
+  }
+  .nav__logo {
+    font-size: 1.59rem;
+    font-family: 'Lobster', cursive;
+    position: absolute;
+    align-self: flex-start;
+  }
+  .nav__label i { 
+    font-size: 2.7em;
+    cursor: pointer;
+  }
+
+  .nav__label {
+    background-color: wheat;
+  }
+
+  .nav__input {
+    display: none;
+  }
+
+  .nav__menu {
+    position: fixed;
+    top: 48px;
+    bottom: 0;
+    background-color: black;
+    opacity: 0.9;
+    left: 0;
+    height: 550px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    clip-path: circle(0 at center);
+    transition: clip-path 1s ease-in-out;
+    position: fixed;
+    z-index: 1;
+  }
+    .nav__menu li a {
+      text-decoration: none;
+      font-size: 2rem;
+      font-family: 'Lobster', cursive;
+      color: wheat;
+    }
+    .nav__input:checked + .nav__menu{
+      clip-path: circle(100% at center);
+    }
+
+.nav__label img {
+  color: wheat;
+}
+
+.nav__container_desktop {
+  display: none;
+}
+
+
+
+
+
+
+
+
+/*Final del Header*/
+/*---------------------------------------------------------------------------------------------
+/*Main del index*/
+
+.main-index {
+  margin: -40px;
+  opacity: 0.9;
+  background-color: black;
+  
+}      
+  .seccion-index-0 {
+    height: auto;
+    width: 80%;
+    margin: 0 auto 0 auto;
+   
+  }
+   .seccion-index-0 h2 {
+      font-size: 1.8rem;
+      color: wheat;
+      font-family: 'Bebas Neue', cursive;
+      text-align: center;  
+      padding: 1rem;
+    }
+    .seccion-index-0 p {
+      font-size: 1.2rem;
+      color: wheat;
+      font-family: 'Bebas Neue', cursive;
+      text-align: center;
+    }
+
+  .seccion-index-1 {
+    height: auto;
+    width: 85%;
+    margin: 20px auto 10px auto;
+    color: wheat;
+    display: flex;
+    flex-direction: column;
+  }
+    .seccion-index-1 h2 {
+      font-size: 1.7rem;
+      color: wheat;
+      font-family: 'Bebas Neue', cursive;
+      border: 5px solid wheat;
+      padding: 15px;
+      text-align: center;
+    }
+      .seccion-index-1 p {
+        font-size: 1.4rem;
+        color: wheat;
+        font-family: 'Bebas Neue', cursive;
+        width: 65%;
+        text-align: start;
+        margin: 20px auto 10px auto;
+        width: 85%;
+      }
+
+  .seccion-index-2 {
+    height: auto;
+    width: 85%;
+    margin: 20px auto 10px auto;
+    color: wheat;
+    display: flex;
+    flex-direction: column;
+  }
+    .seccion-index-2 h2 {
+      font-size: 1.7rem;
+      color: wheat;
+      font-family: 'Bebas Neue', cursive;
+      border: 5px solid wheat;
+      padding: 15px;
+      text-align: center;
+    }
+      .seccion-index-2 p {
+        font-size: 1.4rem;
+        color: wheat;
+        font-family: 'Bebas Neue', cursive;
+        width: 65%;
+        text-align: start;
+        margin: 20px auto 10px auto;
+        width: 85%;
+      }
+
+  .contenedor-podcast-padre {
+    height: auto;
+    width: 60%;
+    border: 5px solid wheat;
+    margin: 20px auto 25px auto;
+    padding: 20px;
+    display: grid;
+    grid-gap: 5px;
+  }
+    .contenedor-podcast-padre h2 {
+      font-size: 1.7rem;
+      color: wheat;
+      font-family: 'Bebas Neue', cursive;
+      text-align: center;
+    }
+      .contenedor-podcast-padre div {
+        width: 100%;
+      }
+
+  .seccion-index-3 {
+    background-color: black;
+    height: auto;
+    width: 80%;
+    color: aliceblue;
+    margin: 10px auto 10px auto;
+    display: flex;
+    flex-direction: column;
+  }
+    .seccion-index-3 h2 {
+      font-size: 1.7rem;
+      color: wheat;
+      font-family: 'Bebas Neue', cursive;
+      border: 5px solid wheat;
+      padding: 15px;
+      text-align: start;
+    }
+      .seccion-index-3 p {
+        font-size: 1.4rem;
+        color: wheat;
+        font-family: 'Bebas Neue', cursive;
+        width: 85%;
+        text-align: center;
+        margin: 20px auto 10px auto;
+      }
+      .seccion-index-3 div {
+        height: auto;
+        width: 75%;
+        margin: 0 auto 0 auto;
+      }
+        .seccion-index-3 div img {
+          height: 200px;
+          width: 100%;
+        }
+  
+  .seccion-index-4 {
+    height: auto;
+    width: 70%;
+    color: wheat;
+    margin: 0 auto 50px auto;
+    display: flex;
+    flex-direction: column;
+  }
+    .seccion-index-4 h2 {
+      font-size: 1.7rem;
+      color: wheat;
+      font-family: 'Bebas Neue', cursive;
+      border: 5px solid wheat;
+      padding: 15px;
+      text-align: center;
+    }
+      .seccion-index-4 div {
+        width: auto;
+        height: 100%;
+      }
+        .seccion-index-4 div img {
+          height: 100%;
+          width: 100%
+        }
+
+
+/*fin del main del Index*/
+/*--------------------------------------------------------------------------------------------------------------------
+/*Inicio del main de la Bibliografia*/
+
+.main-bibliografia {
+  margin-top: -30px;
+  opacity: 0.9;
+  background-color: black;
+ 
+}
+  .seccion-bibliografia-0 {
+    height: auto;
+    width: 90%;
+    margin: 0 auto 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
+    .seccion-bibliografia-0 h2 {
+      font-family: 'Bebas Neue', cursive;
+      font-size: 2.5rem;
+      text-align: center;
+      color: wheat;
+      padding: 5px;
+      
+    }
+      .seccion-bibliografia-0 p {
+        font-size: 1.9rem;
+        text-align: center;
+        margin: 0px auto 25px auto;
+        font-family: 'Bebas Neue', cursive;
+        color: wheat;
+        padding: 1rem;
+      }
+
+  .seccion-bibliografia-1 {
+    height: auto;
+    width: 85%;
+    margin: -15px auto 35px auto;
+    border: 3px solid wheat;
+    display: flex;
+    flex-direction: column;
+  }
+    .seccion-bibliografia-1 h2 {
+      font-size: 1.7rem;
+      margin: 10px;
+      font-family: 'Bebas Neue', cursive;
+      text-align: center;
+      color: wheat;
+    }
+    .seccion-bibliografia-1 div {
+      height: 200px;
+      width: 80%;
+      margin: 0 auto 20px auto;
+    }
+      .seccion-bibliografia-1 div img {
+        height: 100%;
+        width: 100%;
+        margin: 0 auto;
+      }
+      .seccion-bibliografia-1 p {
+        font-size: 1.4rem;
+        font-family: 'Bebas Neue', cursive;
+        text-align: left;
+        color: wheat;
+        padding: 1rem;
+      }
+
+  .seccion-bibliografia-2 {
+    height: auto;
+    width: 85%;
+    margin: 0 auto 35px auto;
+    display: flex;
+    flex-direction: column;
+    border: 3px solid wheat;
+  }
+    .seccion-bibliografia-2 h2 {
+      font-size: 1.7rem;
+      font-family: 'Bebas Neue', cursive;
+      text-align: center;
+      margin: 20px;
+      color: wheat
+    }
+      .seccion-bibliografia-2 div{
+        height: 200px;
+        width: 80%;
+        margin: 0 auto 20px auto;
+      }
+      .seccion-bibliografia-2 div img{
+        height: 100%;
+        width: 100%;
+        margin: 0 auto;
+      }
+      .seccion-bibliografia-2 p {
+        font-size: 1.4rem;
+        font-family: 'Bebas Neue', cursive;
+        text-align: left;
+        color: wheat;
+        padding: 1rem;
+      }
+
+  .seccion-bibliografia-3 {
+    height: auto;
+    width: 85%;
+    margin: 0 auto 35px auto;
+    display: flex;
+    border: 3px solid wheat;
+    flex-direction: column;
+  }
+    .seccion-bibliografia-3 h2 {
+      font-size: 1.7rem;
+      font-family: 'Bebas Neue', cursive;
+      text-align: center;
+      margin: 20px;
+      color: wheat;
+      }
+      .seccion-bibliografia-3 div{
+        height: 200px;
+        width: 80%;
+        margin: 0 auto 20px auto;
+      }
+      .seccion-bibliografia-3 div img{
+        height: 100%;
+        width: 100%;
+        margin: 0 auto;
+      }
+      .seccion-bibliografia-3 p {
+        font-size: 1.4rem;
+        font-family: 'Bebas Neue', cursive;
+        text-align: left;
+        color: wheat;
+        padding: 1rem;
+      }
+
+  .seccion-bibliografia-4 {
+    height: auto;
+    width: 85%;
+    margin: 0 auto 35px auto;
+    display: flex;
+    border: 3px solid wheat;
+    flex-direction: column;
+  } 
+    .seccion-bibliografia-4 h2 {
+      font-size: 1.7rem;
+      font-family: 'Bebas Neue', cursive;
+      text-align: center;
+      margin: 20px;
+      color: wheat;
+    }
+      .seccion-bibliografia-4 div{
+        height: 200px;
+        width: 80%;
+        margin: 0 auto 20px auto;
+      }
+      .seccion-bibliografia-4 div img{
+        height: 100%;
+        width: 100%;
+        margin: 0 auto;
+      }
+      .seccion-bibliografia-4 p {
+        font-size: 1.4rem;
+        font-family: 'Bebas Neue', cursive;
+        text-align: left;
+        color: wheat;
+        padding: 1rem;
+      }
+
+  .seccion-bibliografia-5 {
+    height: auto;
+    width: 85%;
+    margin: 0 auto 50px auto;
+    display: flex;
+    border: 3px solid wheat;
+    flex-direction: column;
+  } 
+    .seccion-bibliografia-5 h2 {
+      font-size: 1.7rem;
+      font-family: 'Bebas Neue', cursive;
+      text-align: center;
+      margin: 20px;
+      color: wheat;
+    }
+      .seccion-bibliografia-5 div{
+        height: 200px;
+        width: 80%;
+        margin: 0 auto 5px auto;
+      }
+        .seccion-bibliografia-5 div img{
+          height: 100%;
+          width: 100%;
+          margin: 0 auto;
+          background-color: wheat;
+        }
+      .seccion-bibliografia-5 p {
+        font-size: 1.4rem;
+        font-family: 'Bebas Neue', cursive;
+        text-align: left;
+        color: wheat;
+        padding: 1rem;
+      }
+  
+/*Fin de la main bibliografia*/
+/*--------------------------------------------------------------------------------------------------------------------
+/*Inicio de Fanshots*/
+
+.main-fanshots {
+  opacity: 0.9;
+  background-color: black;
+  margin-top: -30px;
+}
+  .seccion-fanshots-0 {
+    height: auto;
+    width: 100%;
+    margin: 0 auto 0 auto;
+    display: flex;
+    flex-flow: column nowrap;
+  }
+    .seccion-fanshots-0 h2 {
+      font-size: 4.5rem;
+      font-family: 'Bebas Neue', cursive;
+      text-align: center;
+      color: wheat;
+    }
+      .seccion-fanshots-0 p {
+        font-size: 1.8rem;
+        font-family: 'Bebas Neue', cursive;
+        margin: 0 auto 0 auto;
+        color: wheat;
+        padding: 1rem;
+      }
+  
+  .seccion-fanshots-1 {
+    height: auto;
+    width: 90%;
+    margin: 0 auto 3rem auto;
+    display: grid;
+    grid-gap: 20px;
+  
+  }
+    .seccion-fanshots-1 h2 {
+      font-size: 2.5rem;
+      font-family: 'Bebas Neue', cursive;
+      text-align: center;
+      padding: 1rem;
+      color: wheat;
+      border: 5px solid wheat;  
+    }
+        .seccion-fanshots-1 div {
+          height: 100%;
+          width: auto;
+          padding: 10px;
+          border: 5px solid wheat;        
+        }
+          .seccion-fanshots-1 div img {
+            height: 100%;
+            width: 100%;
+          }
+          .seccion-fanshots-1 iframe {
+            height: 100%;
+            width: 100%;
+          }
+
+    .contenedor-botonera {
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      width: 75%;
+      height: auto;
+      padding: 10px;
+    }
+      .contenedor-botonera h3 {
+        font-size: 30px;
+        font-family: 'Bebas Neue', cursive;
+        text-align: center;
+        color: wheat;
+        border: 3px solid wheat;
+      }
+      .contenedor-botonera button {
+        height: 3rem;
+        width: 8rem;
+        margin: 10px auto 0px auto; 
+      }
+
+/*Fin de main FANSHOTS*/
+/*-----------------------------------------------------------------------*/
+/*Incio de Main FANPOSTS*/
+.main-fanposts{
+  margin-top: -35px; 
+  opacity: 0.9;
+  background-color: black;
+}
+  .seccion-fanposts-0 {
+    height: auto;
+    width: 85%;
+    margin: 0 auto 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
+    .seccion-fanposts-0 h2 {
+      font-size: 4.6rem;
+      font-family: 'Bebas Neue', cursive;
+      text-align: center;
+      color: wheat;
+    }
+      .seccion-fanposts-0 p {
+        font-size: 1.6rem;
+        font-family: 'Bebas Neue', cursive;
+        color: wheat;
+      }
+       
+  .seccion-fanposts-1 {
+    height: auto;
+    width: 92%;
+    margin: 20px auto 50px auto;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    border: 3px solid wheat;
+  }
+    .seccion-fanposts-1 h3 {
+      font-size: 2.3rem;
+      font-family: 'Bebas Neue', cursive;
+      color: wheat;
+      padding: 10px;
+      text-align: center;
+    }
+      .seccion-fanposts-1 div {
+        border: 10px solid black;
+        height: auto;
+        width: auto;
+        padding: 20px;
+        margin-bottom: 40px;
+        border: 2px solid wheat;
+      }
+        .seccion-fanposts-1 h4 {
+          text-align: left;
+          font-size: 1.9rem;
+          font-family: 'Bebas Neue', cursive;
+          color: wheat;
+        }
+          .seccion-fanposts-1 div p {
+            text-align: left;
+            font-size: 1.3rem;
+            font-family: 'Bebas Neue', cursive;
+            color: wheat;
+            padding: 1rem;
+          }
+
+/*Fin de Main FANPOSTS*/
+/*------------------------------------------------------------------------*/
+/*Inicio de Main PRODUCTO*/
+
+.main-producto {
+ margin-top: -30px;
+ opacity: 0.9;
+ background-color: black;
+ 
+}
+  .main-producto h2 {
+    font-size: 3.5rem;
+    font-family: 'Bebas Neue', cursive;
+    color: wheat;
+    padding: 1rem;
+    border: 5px solid wheat;
+  }
+    .main-producto p {
+      font-size: 1.5rem;
+      font-family: 'Bebas Neue', cursive;
+      color: wheat;
+      padding: 1rem;  
+    }
+      .seccion-producto-0 {
+        height: auto;
+        width: 90%;
+        margin: 0 auto 0 auto;
+        display: grid;
+        grid-gap: 1rem;
+        grid-template-columns: 100%;
+        grid-template-areas: 
+          "cabeza"
+          "torso-0"
+          "torso-1"
+          "torso-2"
+          "torso-3"
+          "pie-0"
+          "pie-1"
+          "pie-2"
+          "pie-3";
+      }
+        .seccion-producto-0 p {
+          font-size: 3.5em;
+          font-family: 'Bebas Neue', cursive;
+          color: wheat;
+          text-align: left;
+          border: 5px solid wheat;
+          padding: 10px;
+        }
+        .seccion-producto-0 div {
+          width: 100%;
+        }
+          .seccion-producto-0 div img {
+            width: 100%;
+            height: 100%;
+          }
+  
+  .seccion-producto-1 {
+    height: auto;
+    width: 90%;
+    margin: 20px auto 0 auto;
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: 100%;
+    grid-template-areas: 
+      "cabeza-1"
+      "tronco-0"
+      "tronco-1"
+      "tronco-2"
+      "tronco-3"
+      "raiz-0"
+      "raiz-1"
+      "raiz-2"
+      "raiz-3"
+  }
+    .seccion-producto-1 p {
+      font-size: 3.5em;
+      font-family: 'Bebas Neue', cursive;
+      color: wheat;
+      text-align: left;
+      border: 5px solid wheat;
+      padding: 10px;
+    }
+      .seccion-producto-1 div {
+        width: 100%;
+      }
+        .seccion-producto-1 div img { 
+          width:  100%;
+          height: 100%;
+        }
+  
+  .seccion-producto-2 {
+    height: auto;
+    width: 90%;
+    margin: 20px auto 20px auto;
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: 100%;
+    grid-template-areas: 
+    "cabeza-2"
+    "abdomen-0"
+    "abdomen-1"
+    "abdomen-2"
+    "abdomen-3"
+    "pierna-0"
+    "pierna-1"
+    "pierna-2"
+    "pierna-3";
+  }
+    .seccion-producto-2 p {
+      font-size: 3.5em;
+      font-family: 'Bebas Neue', cursive;
+      color: wheat;
+      text-align: left;
+      border: 5px solid wheat;
+      padding: 10px;
+    }
+      .seccion-producto-2 div {
+        width: 100%;
+      }
+        .seccion-producto-2 div img {
+          height: 100%;
+          width:  100%;
+        }
+
+/*Final del main producto*/
+/*-----------------------------------------------------------------------------*/
+/*Inicio del main Contacto*/
+
+.main-contacto {
+  margin-top: -30px;
+  opacity: 0.9;
+  background-color: black;
+}
+  .formulario {
+    height: auto;
+    width: 100%;
+    margin: 0 auto 0 auto;
+  }
+    .formulario fieldset {
+      width: auto;
+      height: auto;
+      display: grid;
+      grid-gap: 10px;
+    }
+      .formulario legend {
+        font-size: 1.4rem;
+        font-family: 'Bebas Neue', cursive;
+        color: wheat;
+        width: 90%;
+        margin: 0 auto 0 auto;
+      }
+      .formulario label {
+        font-size: 1.1rem;
+        font-family: 'Bebas Neue', cursive;
+        color: wheat;
+        width: 95%;
+        margin-left: 1rem;
+      }
+        .formulario input {
+          width: 80%;
+          margin: 0 auto;
+        }        
+        .formulario textarea {
+          width: 70%;
+          margin: 0 auto;
+            }
+            .formulario p {
+            margin: 0 auto;
+            }
+
+    .generos {
+      padding: 5px;
+      display: grid;
+      grid-template-areas: 
+      "p p p p p";
+    }
+      .generos p {
+        font-size: 1.1rem;
+        font-family: 'Bebas Neue', cursive;
+        color: wheat;
+      }
+          .generos input {
+            width: 30%;
+          }
+            #hombre {
+              margin-left: 10px;
+              width: 22%;
+            }
+ 
+        .tallas {
+          margin: 0 0 10px 50px;
+          display: block;
+        }
+          .tallas select {
+            margin-left: 15px;
+            width: 140px;
+            height: 30px;
+          }
+
+        .checkbox {
+          text-align: center;
+          display: flex;
+          flex-direction: column;
+          width: 100%;
+          height: 9.4rem;
+        }
+          .checkbox h3 {
+            font-size: 1.6rem;
+            font-family: 'Bebas Neue', cursive;
+            color: wheat;
+          }
+          .checkbox button{          
+            height: 45px;
+            width: 200px;
+            margin-bottom: 5px;
+          }
+            .checkbox input{
+              margin-bottom: 20px;
+            }
+
+  .agradecimientos {
+    width: 100%;
+    height: auto;
+    font-size: 2rem;
+    font-family: 'Bebas Neue', cursive;
+    border: 5px solid wheat;
+    display: flex;
+    flex-direction: row;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    justify-content: center;
+  }
+    .agradecimientos h3 {
+      text-align: center;
+      color: wheat;
+      padding: 2rem;
+    }
+    
+          
+/*Final del main Contacto*/
+/*-----------------------------------------------------------------------*/
+/*Footer general de todas las paginas*/
+
+footer{
+  width: 100%;
+  height: auto;
+  opacity: 0.9;
+  background-color: black;
+}
+ .footer__contenedor {
+  width: auto;
+  padding: 1rem;
+  margin: 0 auto;
+  border: 5px solid wheat;
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  grid-template-areas: 
+    "FACEBOOK TWITTER INSTAGRAM"
+    "DISCORD LINKEDIN CONTACTO";   
+ }
+  .footer__contenedor a {
+    text-decoration: none
+  }
+    .footer__contenedor h4 {
+      font-size: 1.3rem;
+      font-family: 'Bebas Neue', cursive;
+      list-style: none;
+      color: wheat;
+      text-align: center;
+    }
+
+/*Final del Footer*/
+/*---------------------------------------------*/
+/*Inicio de la media Quary 475px*/    
+
+@media only screen and (min-width: 475px) and (max-width: 599px){
+  
+  .seccion-index-0 {
+    width: 85%;
+  }
+    .seccion-index-0 h2 {
+      font-size: 2.7rem;
+    }
+    .seccion-index-0 p {
+      font-size: 1.5rem;     
+    }
+  
+  .seccion-index-1 {
+    width: 85%;
+    }
+    .seccion-index-1 h2 {
+      font-size: 2.5rem;
+      }
+      .seccion-index-1 p {
+      font-size: 1.8rem;     
+      width: 85%;
+      }
+  
+  .seccion-index-2 {
+    width: 80%;
+  }
+    .seccion-index-2 h2 {
+      font-size: 2.7rem;
+    }
+      .seccion-index-2 p {
+        font-size: 1.8rem;
+        width: 85%;
+      }
+      
+  .seccion-index-3 {
+  width: 85%;
+  }
+    .seccion-index-3 h2 {
+      font-size: 2.7rem; 
+      text-align: center;
+    }
+    .seccion-index-3 p {
+      font-size: 1.5rem;
+      width: 85%;
+    }   
+
+  .seccion-index-4 {
+    width: 80%; 
+  }
+    .seccion-index-4 h2 {
+      font-size: 2.7rem;   
+    }
+      .seccion-index-4 div {
+        width: auto;
+      }     
+
+/*quary Media (480px) Bibliografia*/
+      
+  .main-bibliografia {
+    width: auto;
+  }
+  .seccion-bibliografia-0 {
+    width: 100%; 
+  }
+    .seccion-bibliografia-0 h2 {
+      font-size: 4rem;
+      padding: 10px;  
+    }
+      .seccion-bibliografia-0 p {
+        font-size: 1.9rem;
+        text-align: center;
+      }
+
+  .seccion-bibliografia-1 {
+    width: 85%;
+  }
+    .seccion-bibliografia-1 h2 {
+      font-size: 2.5rem;
+      padding: 10px;
+    }
+      .seccion-bibliografia-1 p {
+        font-size: 1.8rem;
+      }
+
+  .seccion-bibliografia-2 {
+    width: 85%;
+  }
+    .seccion-bibliografia-2 h2 {
+      font-size: 2.5rem;
+      padding: 10px;
+    }   
+      .seccion-bibliografia-2 p {
+        font-size: 1.8rem;
+      }
+
+  .seccion-bibliografia-3 {
+    width: 85%;
+  }
+    .seccion-bibliografia-3 h2 {
+      font-size: 2.5rem;
+      padding: 10px;
+      }
+      .seccion-bibliografia-3 p {
+        font-size: 1.8rem;
+      }
+
+  .seccion-bibliografia-4 {
+    width: 85%;
+  } 
+    .seccion-bibliografia-4 h2 {
+      font-size: 2.5rem;
+      padding: 10px;
+    }
+      .seccion-bibliografia-4 p {
+        font-size: 1.8rem;
+      }
+
+  .seccion-bibliografia-5 {
+    width: 85%;
+    padding: 1.1rem;
+  } 
+    .seccion-bibliografia-5 h2 {
+      font-size: 2.5rem;
+      padding: 10px;
+    }
+      .seccion-bibliografia-5 p {
+        font-size: 1.8rem;     
+      }
+
+/*quary Media (480px) Fanshots*/
+  .main-fanshots {
+    width: auto;
+  }
+    .seccion-fanshots-0 {
+      height: auto;
+    }
+      .seccion-fanshots-0 h2 {
+        font-size: 4.7rem;
+      }
+        .seccion-fanshots-0 p {
+          font-size: 1.8rem;
+          margin-bottom: 10px;
+        }
+    
+    .seccion-fanshots-1 {
+      width: 90%;
+      grid-template-columns: 1fr;
+      grid-template-areas: 
+      "cabeza-fanshot"
+      "img-fanshot-0"
+      "img-fanshot-1"
+      "img-fanshot-2"
+      "img-fanshot-3"
+      "img-fanshot-4"
+      "img-fanshot-5"
+      "img-fanshot-6"
+      "img-fanshot-7"
+      "img-fanshot-8"
+      "img-fanshot-9";
+    }
+    .cabeza-fanshot {
+      grid-column-start: cabeza-fanshot;
+      grid-column-end: cabeza-fanshot;
+    }
+
+      .seccion-fanshots-1 h2 {
+        font-size: 2.5rem;
+      }
+        .seccion-fanshots-contenedor div {
+          width: auto;
+       
+      }
+          .seccion-fanshots-contenedor div img {
+              height: 100%;
+              width: 100%;
+          }
+          .seccion-fanshots-contenedor iframe {
+                height: 100%;
+                height: 100%;
+          }
+
+/*quary Media (480px)Fanposts*/
+  .main-fanposts{
+    width: auto;
+  }
+    .seccion-fanposts-0 {  
+      width: 90%;
+    }
+      .seccion-fanposts-0 h2 {
+        font-size: 6.6rem;
+      }
+        .seccion-fanposts-0 p {
+          font-size: 1.6rem;  
+        }
+        
+    .seccion-fanposts-1 {
+      height: auto;
+    }
+      .seccion-fanposts-1 h3 {
+        font-size: 2.3rem;
+      }     
+          .seccion-fanposts-1 h4 {
+            font-size: 2.2rem;       
+          }
+            .seccion-fanposts-1 div p {
+              font-size: 1.5rem;            
+            }
+ 
+/*quary Media (480px)Productos */
+.main-producto h2{
+  font-size: 5.3rem;
+  width: 90%;
+}
+  .main-producto p {
+    font-size: 1.9rem;
+  }
+.seccion-producto-0 {
+  grid-template-columns: 48% 48%;
+  grid-template-rows: 5rem repeat(4, 10rem);
+  grid-template-areas: 
+  "cabeza cabeza"
+  "torso-0 torse-1"
+  "torse-2 torso-3"
+  "pie-0 pie-1"
+  "pie-2 pie-3";
+  margin-bottom: 2rem;
+}
+  .cabeza {
+    grid-column-start: cabeza;
+    grid-column-end: cabeza;
+  }
+
+.seccion-producto-1 {
+  grid-template-columns: 48% 48%;
+  grid-template-rows: 5rem repeat(4, 10rem);
+  grid-template-areas: 
+  "cabeza-1 cabeza-1"
+  "tronco-0 tronco-1"
+  "tronco-2 tronco-3"
+  "raiz-0 raiz-1"
+  "raiz-2 raiz-3";
+  margin-bottom: 2rem;
+}
+  .cabeza-1 {
+    grid-column-start: cabeza-1;
+    grid-column-end: cabeza-1;
+  }
+
+.seccion-producto-2 {
+  grid-template-columns: 48% 48%;
+  grid-template-rows: 5rem repeat(4, 10rem);
+  grid-template-areas: 
+  "cabeza-2 cabeza-2"
+  "abdomen-0 abdomen-1"
+  "abdomen-2 abdomen-3"
+  "pierna-0 pierna-1"
+  "pierna-2 pierna-3";
+  margin-bottom: 1rem
+}
+  .cabeza-2 {
+    grid-column-start: cabeza-2;
+    grid-column-end: cabeza-2;
+  }
+
+
+
+/*quary Media (480px)Contacto*/
+
+.formulario legend {
+  font-size: 2.1rem;
+}
+  .formulario label {
+    font-size: 2.0rem;
+  }
+    .generos p {
+      font-size: 2.0rem;
+    }
+      #mujer {
+        width: 23%;
+      }
+    .tallas select {
+      margin-left: 1.5rem;
+    }
+
+/*quary Media(480px) Footer*/
+
+  .footer__contenedor h4 {
+    font-size: 1.5rem;
+  }
+}
+
+
+/*Fin de la quary Media de 480px*/
+/*----------------------------------------*/
+/*inicion de la Quary media de 600px*/
+
+/*Inicio de quary Media index*/
+
+@media only screen and (min-width: 600px) and (max-width: 725px)  {
+
+  .seccion-index-0 h2 {
+    font-size: 3.8rem;
+    text-align: center;
+  } 
+    .seccion-index-0 p{
+      font-size: 1.2rem;
+    }
+
+  .seccion-index-1 h2 {
+    font-size: 3.8rem;
+  }
+    .seccion-index-1 p {
+      font-size: 2.2rem;
+      width: 100%;
+      text-align: start;
+    }
+  
+  .seccion-index-2 h2 {
+    font-size: 3.8rem;
+  }
+    .seccion-index-2 p {
+      font-size: 2.2rem;
+      width: 100%;
+      text-align: start;
+    }
+
+  .contenedor-podcast-padre {
+    width: 72%;
+    grid-gap: 1.2rem;
+  }
+    .contenedor-podcast-padre h2 {
+      font-size: 3.0rem;
+    }
+  
+  .seccion-index-3 h2{
+    font-size: 3.0rem;
+  }
+  .seccion-index-3 p {
+      font-size: 2.2rem;
+      width: 90%;
+  }
+  .seccion-index-3 div {
+    width: 100%;
+  }
+
+  .seccion-index-4 {
+    width: 81%;
+  }
+    .seccion-index-4 h2 {
+      font-size: 3.0rem;
+    }
+
+/*quary media (600px) de bibliografia*/
+
+.seccion-bibliografia-0 {
+  width: 100%;
+}
+  .seccion-bibliografia-0 h2 {
+    font-size: 6.5rem;
+  }
+    .seccion-bibliografia-0 p {
+      font-size: 2.9;
+    }
+
+.seccion-bibliografia-1 {
+  width: 87%;
+}
+  .seccion-bibliografia-1 h2 {
+    font-size: 2rem;
+  }
+  .seccion-bibliografia-1 div {
+    width: 85%;
+  }
+    .seccion-bibliografia-1 p {
+      font-size: 2rem;
+    }
+
+.seccion-bibliografia-2 {
+  width: 87%;
+}
+  .seccion-bibliografia-2 h2 {
+    font-size: 2rem;
+  }
+  .seccion-bibliografia-2 div {
+    width: 85%;
+  }
+    .seccion-bibliografia-2 p {
+      font-size: 2rem;
+    }
+.seccion-bibliografia-3 {
+  width: 87%;
+}
+  .seccion-bibliografia-3 h2 {
+    font-size: 2rem;
+  }
+  .seccion-bibliografia-3 div {
+    width: 85%;
+  }
+    .seccion-bibliografia-3 p {
+      font-size: 2rem;
+    }
+.seccion-bibliografia-4 {
+  width: 87%;
+}
+  .seccion-bibliografia-4 h2 {
+    font-size: 2rem;
+  }
+  .seccion-bibliografia-4 div {
+    width: 85%;
+  }
+    .seccion-bibliografia-4 p {
+      font-size: 2rem;
+    }
+.seccion-bibliografia-5 {
+  width: 87%;
+  margin-bottom: 60px;
+}
+  .seccion-bibliografia-5 h2 {
+    font-size: 2rem;
+  }
+  .seccion-bibliografia-5 div {
+    width: 85%;
+  }
+    .seccion-bibliografia-5 p {
+      font-size: 2rem;
+    }
+
+/*quary Media (600px) de FAN-SHOTS*/
+
+.seccion-fanshots-0 h2 {
+  font-size: 8.5rem;
+}
+    .seccion-fanshots-0 p {
+      font-size: 3rem;
+      margin-top: -2rem;
+    }
+    
+.seccion-fanshots-1 h2 {
+      font-size: 3.5rem;
+    }
+    .seccion-fanshots-1 div {
+      height: auto;
+    } 
+ .seccion-fanshots-1 {
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 8rem repeat(5, 20rem);
+  grid-template-areas: 
+    "cabeza-fanshot cabeza-fanshot"
+    "img-fanshot-1 img-fanshot-1"
+    "img-fanshot-2 img-fanshot-3"
+    "img-fanshot-4 img-fanshot-5"
+    "img-fanshot-6 img-fanshot-7"
+    "img-fanshot-0 img-fanshot-9"
+    "img-fanshot-8 img-fanshot-8";
+}
+  .cabeza-fanshot {
+    grid-column-start: cabeza-fanshot;
+    grid-column-end: cabeza-fanshot;
+  }
+  .img-fanshot-1 {
+    grid-area: img-fanshot-1;
+    grid-row-start: img-fanshot-1;
+    grid-row-end: img-fanshot-1;
+  }
+  .img-fanshot-8 {
+    grid-area: img-fanshot-8;
+    grid-row-start: img-fanshot-8;
+    grid-row-end: img-fanshot-8;
+  }
+
+.seccion-fanshots-1 h2 {
+  font-size: 3.9rem;
+} 
+
+/*quary Media (600px) de FAN-POSTS*/
+
+.seccion-fanposts-0 {
+  width: 90%;
+}
+.seccion-fanposts-0 h2{
+  font-size: 6.9rem;
+}
+  .seccion-fanposts-0 p {
+    font-size: 2rem;
+    width: 100%;
+  }
+
+/*quary Media 600px de producto*/
+
+.main-producto h2 {
+  font-size: 5rem;
+}
+
+.main-producto p {
+  font-size: 2.5rem;
+}
+
+.seccion-producto-0 {
+  grid-template-columns: 49% 49%;
+  grid-template-rows: 5rem repeat(4, 10rem);
+  grid-template-areas: 
+  "cabeza cabeza"
+  "torso-0 torse-1"
+  "torse-2 torso-3"
+  "pie-0 pie-1"
+  "pie-2 pie-3";
+  margin-bottom: 2rem;
+}
+  .cabeza {
+    grid-column-start: cabeza;
+    grid-column-end: cabeza;
+  }
+
+.seccion-producto-1 {
+  grid-template-columns: 49% 49%;
+  grid-template-rows: 5rem repeat(4, 10rem);
+  grid-template-areas: 
+  "cabeza-1 cabeza-1"
+  "tronco-0 tronco-1"
+  "tronco-2 tronco-3"
+  "raiz-0 raiz-1"
+  "raiz-2 raiz-3";
+  margin-bottom: 2rem;
+}
+  .cabeza-1 {
+    grid-column-start: cabeza-1;
+    grid-column-end: cabeza-1;
+  }
+
+.seccion-producto-2 {
+  grid-template-columns: 49% 49%;
+  grid-template-rows: 5rem repeat(4, 10rem);
+  grid-template-areas: 
+  "cabeza-2 cabeza-2"
+  "abdomen-0 abdomen-1"
+  "abdomen-2 abdomen-3"
+  "pierna-0 pierna-1"
+  "pierna-2 pierna-3";
+  margin-bottom: 5rem;
+}
+  .cabeza-2 {
+    grid-column-start: cabeza-2;
+    grid-column-end: cabeza-2;
+  }
+
+/*quary Media (600px) de Contactos*/
+
+.formulario legend{
+  font-size: 2.5rem;
+}
+  .formulario label {
+    font-size: 2rem;
+  }
+    .formulario input{
+      height: 2rem;
+    }
+    .formulario textarea {
+      width: 75%;
+    }
+
+.generos p {
+  font-size: 2rem;
+}
+
+.checkbox h3 {
+  font-size: 1.5rem;
+}
+
+.tallas select {
+  margin-left: 5rem;
+}
+
+.checkbox {
+  margin-bottom: 1rem;
+}
+
+/*quary Media (600px) del Footer */
+  .footer__contenedor h4 {
+    font-size: 2.0rem;
+  }
+  
+}
+
+/*Fin de la Quary media de 600px*/
+/*--------------------------------*/
+/*Inicio de la Quary media de 726px*/
+
+/*inicio exclusivo del nav desktop*/
+
+@media only screen and (min-width: 726px) {
+  /*Fin del menu Hamburguesa*/
+.nav__container {
+  display: none;
+}
+  
+/*Inicio del Menu desktop*/
+
+.nav__container_desktop {
+  height: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; 
+  position: relative;
+  background-color: black;
+  border: 2px solid wheat;
+  margin-bottom: 20px;
+  z-index: 1;
+  }
+  .nav__logo_desktop a {
+    font-size: 1.5rem;
+    font-family: 'Lobster', cursive;
+    cursor: pointer;
+    color: #fff;
+    text-decoration: none;
+  
+  }
+  .nav__menu_desktop li {
+    list-style: none;
+    display: inline-block;
+    color: #fff;
+    font-family: 'Righteous', cursive;
+    margin-right: 15px;
+  }
+    .nav__menu_desktop li a {
+      text-decoration: none;
+      color: #fff;
+      padding: 5px;
+      transition: all 0.3s ease 0s;
+    }
+    .nav__menu_desktop li a:hover {
+      color: wheat;
+    }
+}
+
+/*fin del nav desktop*/
+
+@media only screen and (min-width: 726px) and (max-width: 1026px) {
+
+.seccion-index-0 {
+  width: 100%;
+}
+  .seccion-index-0 h2 {
+    font-size: 4.0rem;
+    margin-top: 10px;
+  }
+
+.seccion-index-1 h2 {
+  font-size: 3.8rem;
+}
+  .seccion-index-1 p {
+    font-size: 1.8rem;
+    width: 100%;
+    text-align: start;
+  }
+
+  .seccion-index-2 h2 {
+    font-size: 3.8rem;
+  }
+    .seccion-index-2 p {
+      font-size: 1.8rem;
+      width: 100%;
+      text-align: start;
+    }
+
+.contenedor-podcast-padre {
+  width: 75%;
+}
+  .contenedor-podcast-padre h2 {
+    font-size: 2.8rem;
+  }
+
+.seccion-index-3 h2 {
+  font-size: 3.8rem;
+}
+  .seccion-index-3 p {
+    font-size: 2.5rem;
+    width: 90%;
+  }
+  .seccion-index-3 div {
+    margin: 1rem auto;
+  }
+
+.seccion-index-4 {
+  width: 80%;
+  height: auto;
+  display: grid;
+  margin: 0 auto 5rem auto;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: repeat(1, 7rem);
+  grid-template-areas: 
+    "gifs gifs"
+    "gif-0 gif-1"
+    "gif-2 gif-3";
+}
+  .gifs {
+    grid-column-start: gifs;
+    grid-column-end: gifs;
+  }
+  .seccion-index-4 h2{
+  font-size: 3.8rem;
+  }
+
+/*Quary media de 768px de Bibliografia*/
+
+.seccion-bibliografia-0 {
+  width: 100%;
+}
+  .seccion-bibliografia-0 h2 {
+    font-size: 6.4rem;
+  }
+    .seccion-bibliografia-0 p {
+      font-size: 2.2rem;
+    }
+
+.seccion-bibliografia-1 {
+  width: 85%;
+}
+  .seccion-bibliografia-1 h2 {
+    font-size: 3rem;
+  }
+    .seccion-bibliografia-1 p {
+      font-size: 2rem;
+    }
+
+.seccion-bibliografia-2 {
+  width: 85%;
+}
+  .seccion-bibliografia-2 h2 {
+    font-size: 3rem;
+  }
+    .seccion-bibliografia-2 p {
+      font-size: 2rem;
+    }
+.seccion-bibliografia-3 {
+  width: 85%;
+}
+  .seccion-bibliografia-3 h2 {
+    font-size: 3rem;
+  }
+    .seccion-bibliografia-3 p {
+      font-size: 2rem;
+    }
+
+.seccion-bibliografia-4 {
+  width: 85%;
+}
+  .seccion-bibliografia-4 h2 {
+    font-size: 3rem;
+  }
+    .seccion-bibliografia-4 p {
+      font-size: 2rem;
+    }
+
+.seccion-bibliografia-5 {
+  width: 80%;
+  margin-bottom: 4rem;
+}
+  .seccion-bibliografia-5 h2 {
+    font-size: 3rem;
+  }
+    .seccion-bibliografia-5 p {
+      font-size: 2rem;
+    }
+
+/*media Quary (768px) FANSHOTS*/
+
+.seccion-fanshots-0 h2 {
+  font-size: 6rem;
+}
+  .seccion-fanshots-0 p {
+    margin-top: -1.5rem;
+    text-align: center;
+    font-size: 3rem;
+  }
+
+  .seccion-fanshots-1 {
+    width: 85%;
+    gap: 40px;
+    grid-template-columns: 47% 47%;
+    grid-template-rows: 8rem repeat(5, 20rem) 20rem;
+    grid-template-areas: 
+      "cabeza-fanshot cabeza-fanshot"
+      "img-fanshot-1 img-fanshot-1"
+      "img-fanshot-2 img-fanshot-3"
+      "img-fanshot-4 img-fanshot-5"
+      "img-fanshot-6 img-fanshot-7"
+      "img-fanshot-0 img-fanshot-9"
+      "img-fanshot-8 img-fanshot-8";
+  }
+    .cabeza-fanshot {
+      grid-column-start: cabeza-fanshot;
+      grid-column-end: cabeza-fanshot;
+    }
+    .img-fanshot-1 {
+      grid-area: img-fanshot-1;
+      grid-row-start: img-fanshot-1;
+      grid-row-end: img-fanshot-1;
+    }
+    .img-fanshot-8 {
+      grid-area: img-fanshot-8;
+      grid-row-start: img-fanshot-8;
+      grid-row-end: img-fanshot-8;
+    }
+
+.seccion-fanshots-1 h2 {
+  font-size: 3.9rem;
+}
+
+
+/*media Quary (768px) FANPOSTS*/
+
+.seccion-fanposts-0 {
+  width: 100%;
+ 
+}
+.seccion-fanposts-0 h2 {
+  font-size: 7rem;
+}
+  .seccion-fanposts-0 p {
+    font-size: 2.0rem;
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+.seccion-fanposts-1 h3 {
+ font-size: 4rem;
+}
+  .seccion-fanposts-1 h4 {
+    font-size: 2.7rem;
+  }
+    .seccion-fanposts-1 div p {
+      font-size: 1.6rem;
+    }
+
+/*quary Media (768px) de Productos*/
+
+
+.main-producto h2 {
+  font-size: 4.8rem;
+  text-align: center
+} 
+  .main-producto p {
+    font-size: 3.5rem;
+  }
+
+.seccion-producto-0 {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: 10rem 10rem 10rem 10rem;
+  grid-template-rows: 8rem 8rem 8rem;
+  grid-template-areas: 
+  "cabeza cabeza cabeza cabeza"
+  "torso-0 torso-1 torso-2 torseo-3"
+  "pie-0 pie-1 pie-2 pie-3";
+}
+  .cabeza {
+    grid-column-start: cabeza;
+    grid-column-end: cabeza;
+  }
+
+.seccion-producto-1 p {
+  font-size: 3.5rem;
+}
+
+.seccion-producto-1 {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: 10rem 10rem 10rem 10rem;
+  grid-template-rows: 8rem 8rem 8rem;
+  grid-template-areas: 
+  "cabeza-1 cabeza-1 cabeza-1 cabeza-1"
+  "tronco-0 tronco-1 tronco-2 tronco-3"
+  "raiz-0 raiz-1 raiz-2 raiz-3";
+}
+  .cabeza-1 {
+    grid-column-start: cabeza-1;
+    grid-column-end: cabeza-1;
+  }
+
+.seccion-producto-2 {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: 10rem 10rem 10rem 10rem;
+  grid-template-rows: 8rem 8rem 8rem;
+  grid-template-areas: 
+  "cabeza-2 cabeza-2 cabeza-2 cabeza-2"
+  "abdomen-0 abdomen-1 abdomen-2 abdomen-3"
+  "pierna-0 pierna-1 pierna-2 pierna-3";
+}
+  .cabeza-2 {
+    grid-column-start: cabeza-2;
+    grid-column-end: cabeza-2;
+  }
+
+/*quary Media (768px) de Contacto*/
+
+.formulario legend {
+  font-size: 3.5rem;
+  margin-top: 1rem;
+}
+
+  .formulario label {
+    font-size: 2.5rem;
+  }
+
+  .formulario input {
+    font-size: 1rem;
+  }
+
+  .formulario textarea {
+    width: 75%;
+    font-size: 1rem;
+  }
+
+  .generos p {
+    font-size: 2.5rem;
+  }
+
+  .tallas select {
+    margin-left: 20%;
+    height: 3rem;
+    width: 20%;
+  }
+
+  .checkbox {
+    display: grid;
+    margin: auto;
+    margin-bottom: 3rem;
+    margin-left: 8%;
+    grid-template-columns: 40% 40%;
+    grid-template-rows: 5rem 5rem;
+    grid-template-areas: 
+      "checkbox checkbox-input" 
+      "boton boton";
+  }
+    #checkbox {
+      height: 2rem;
+    }
+      .checkbox h3 {
+        font-size: 2rem;
+      }
+        .checkbox button {
+          margin: 1rem 0 1rem 79%;
+        }
+
+.footer__contenedor {
+  grid-gap: 1rem;
+}
+  .footer__contenedor h4 {
+    font-size: 2.1rem;
+  }
+
+}
+
+/*Fin de la media Quary 768x1023*/
+/*-------------------------------------------------*/
+/*Inicio de la quary Media (1024px)*/
+@media only screen and (min-width: 1024px) and (max-width: 1134px) {
+
+.seccion-index-0 {
+  width: 95%;
+}
+  .seccion-index-0 h2 {
+    font-size: 5.5rem;
+  }
+    .seccion-index-0 p {
+      font-size: 2rem;
+    }
+
+.seccion-index-1 {
+  width: 90%;
+}
+  .seccion-index-1 h2 {
+    font-size: 4.5rem;
+  }
+    .seccion-index-1 p {
+      font-size: 2rem;
+      width: 100%;
+      text-align: start;
+    }
+  
+.seccion-index-2 {
+  width: 90%;
+}
+  .seccion-index-2 h2 {
+    font-size: 4.5rem;
+  }
+    .seccion-index-2 p {
+      font-size: 2rem;
+      width: 100%;
+      text-align: start;
+    }
+
+.contenedor-podcast-padre {
+  width: 85%;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 7rem 1fr 1fr;
+  grid-template-areas: 
+    "cabeza-podcast cabeza-podcast cabeza-podcast"
+    "iframe-0 iframe-1 iframe-2"
+    "iframe-3 iframe-4 iframe-5";
+}
+  .contenedor-podcast-padre h2{
+    font-size: 3rem;
+    margin: 0 auto;
+  }
+  .cabeza-podcast {
+    grid-column-start: cabeza-podcast;
+    grid-column-end: cabeza-podcast;
+  }
+
+.seccion-index-3 {
+  width: 90%;
+}
+  .seccion-index-3 h2 {
+    font-size: 4.5rem;
+  }
+    .seccion-index-3 p {
+      font-size: 2rem;
+    }
+  .seccion-index-3 div {
+    width: 50%;
+    margin-bottom: 1rem;
+  }
+
+.seccion-index-4 {
+    width: max-content;
+    display: grid;
+    margin-bottom: 5rem;
+    grid-template-columns: 25rem 25rem;
+    grid-template-rows: 7rem 15rem 15rem;
+      grid-template-areas: 
+      "gifs gifs"
+      "gif-0 gif-1"
+      "gif-2 gif-3";
+}
+  .gifs {
+    grid-column-start: gifs;
+    grid-column-end: gifs;
+  }
+
+  .seccion-index-4 h2 {
+    font-size: 4.5rem;
+  }
+
+/*quary Media 1024px de Bibliografia*/
+
+.seccion-bibliografia-0 {
+  width: 90%;
+}
+  .seccion-bibliografia-0 h2 {
+    font-size: 8rem;
+   
+  }
+    .seccion-bibliografia-0 p {
+      font-size: 3rem;
+    }
+
+.seccion-bibliografia-1 {
+  width: 85%;
+}
+  .seccion-bibliografia-1 h2 {
+    font-size: 5rem;
+  }
+    .seccion-bibliografia-1 p {
+      font-size: 2rem;
+    }
+
+.seccion-bibliografia-2 {
+  width: 85%;
+}
+  .seccion-bibliografia-2 h2 {
+    font-size: 5rem;
+  }
+    .seccion-bibliografia-2 p {
+      font-size: 2rem;
+    }
+
+.seccion-bibliografia-3 {
+  width: 85%;
+}
+  .seccion-bibliografia-3 h2 {
+    font-size: 5rem;
+  }
+    .seccion-bibliografia-3 p {
+      font-size: 2rem;
+    }
+
+.seccion-bibliografia-4 {
+  width: 85%;
+}
+  .seccion-bibliografia-4 h2 {
+    font-size: 5rem;
+  }
+    .seccion-bibliografia-4 p {
+      font-size: 2rem;
+    }
+
+.seccion-bibliografia-5 {
+  width: 85%;
+}
+  .seccion-bibliografia-5 h2 {
+    font-size: 5rem;
+  }
+    .seccion-bibliografia-5 p {
+      font-size: 2rem;
+    }
+
+/*Quary Media 1024px de FANSHOTS*/
+
+.seccion-fanshots-0 h2 {
+  font-size: 7rem;
+}
+  .seccion-fanshots-0 p {
+    font-size: 3rem;
+    margin-left: 2rem;
+    margin-top: -2rem;
+  }
+
+.seccion-fanshots-1 div img {
+  height: 100%;
+}
+.seccion-fanshots-1 div iframe {
+  height: 100%;
+
+}
+  .seccion-fanshots-1 {
+    margin: 0 auto;
+    margin-bottom: 5rem;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-rows: 6rem 1fr 1fr 1fr;
+    grid-template-areas: 
+    "cabeza-fanshot cabeza-fanshot cabeza-fanshot"
+    "img-fanshot-0 img-fanshot-1 img-fanshot-2"
+    "img-fanshot-3 img-fanshot-4 img-fanshot-5"
+    "img-fanshot-6 img-fanshot-7 img-fanshot-8"
+    "img-fanshot-9 img-fanshot-9 img-fanshot-9";
+    }
+    .cabeza-fanshot {
+      grid-column-start: cabeza-fanshot;
+      grid-column-end: cabeza-fanshot;
+    }
+    .img-fanshot-9 {
+      grid-area: img-fanshot-9;
+      grid-column-start: img-fanshot-9;
+      grid-column-end:img-fanshot-9;
+    }
+    .seccion-fanshots-1 h2 {
+      font-size: 3.5rem
+    }
+
+.contenedor-botonera {
+  height: 10rem;
+  border: 3px solid wheat;
+}
+
+.contenedor-botonera button {
+  height: 7rem;
+  
+}
+
+/*Quary media 1024px de Fanposts*/
+
+.seccion-fanposts-0 {
+  width: 93%;
+}
+  .seccion-fanposts-0 h2 {
+    font-size: 7rem;
+  }
+    .seccion-fanposts-0 p {
+      font-size: 2.8rem;
+      width: 95%;
+    }
+
+.seccion-fanposts-1 h3 {
+  font-size: 3rem;
+}
+  .seccion-fanposts-1 h4 {
+    font-size: 3rem;
+  }
+    .seccion-fanposts-1 p {
+      font-size: 1.9rem;
+    }
+
+
+/*Quary media 1024 productos*/
+
+.main-producto h2 {
+  font-size: 5rem;
+}
+  .main-producto p {
+    font-size: 3rem;
+  }
+
+
+.seccion-producto-0 {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: 14rem 14rem 14rem 14rem;
+  grid-template-rows: 8rem 8rem 8rem;
+  grid-template-areas: 
+  "cabeza cabeza cabeza cabeza" 
+  "torso-0 torso-1 torso-2 torseo-3" 
+  "pie-0 pie-1 pie-2 pie-3";
+}
+
+  .cabeza {
+    grid-column-start: cabeza;
+    grid-column-end: cabeza;
+  }
+
+.seccion-producto-1 {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: 14rem 14rem 14rem 14rem;
+  grid-template-rows: 8rem 8rem 8rem;
+  grid-template-areas: 
+  "cabeza-1 cabeza-1 cabeza-1 cabeza-1"
+  "tronco-0 tronco-1 tronco-2 tronco-3"
+  "raiz-0 raiz-1 raiz-2 raiz-3";
+}
+  .cabeza-1 {
+    grid-column-start: cabeza-1;
+    grid-column-end: cabeza-1;
+  }
+
+.seccion-producto-2 {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: 14rem 14rem 14rem 14rem;
+  grid-template-rows: 8rem 8rem 8rem;
+  grid-template-areas: 
+  "cabeza-2 cabeza-2 cabeza-2 cabeza-2"
+  "abdomen-0 abdomen-1 abdomen-2 abdomen-3"
+  "pierna-0 pierna-1 pierna-2 pierna-3";
+}
+  .cabeza-2 {
+    grid-column-start: cabeza-2;
+    grid-column-end: cabeza-2;
+  }
+
+
+/*quary Media 1024 de Contacto*/
+
+.formulario legend {
+  font-size: 4rem;
+}
+
+.formulario label {
+  font-size: 3.5rem;
+}
+  .formulario input {
+    height: 2rem;
+    width: 75%;
+  }
+  .formulario textarea {
+    width: 45rem;
+  }
+
+.generos p {
+  font-size: 3.5rem;
+}
+  #hombre {
+  margin-top: 1rem;
+  }
+  #mujer {
+    margin-top: 1rem;
+  }
+
+.checkbox {
+  display: grid;
+  margin-bottom: 1rem;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 2rem 2rem;
+  grid-template-areas: 
+    "checkbox checkbox-input" 
+    "boton boton";
+}
+  .checkbox h3 {
+    font-size: 2rem;
+  }
+  .checkbox button {
+    margin: 1.5rem 0 0 28rem;
+  }
+
+.footer__contenedor {
+  margin-top: 80px;
+  }
+  .footer__contenedor h4 {
+    font-size: 2.3rem;
+  }
+
+}
+/*Fin de la Quary media 1024px*/
+/*----------------------------------------*/
+/*Quary media 1200px escritorio*/
+
+/*Quary media index*/
+
+@media only screen and (min-width: 1135px) {
+  
+.seccion-index-0 {
+  width: 95%;
+}
+  .seccion-index-0 h2 {
+    font-size: 5rem;
+  }
+    .seccion-index-0 p {
+      font-size: 2rem;
+      width: 95%;
+    }
+
+.seccion-index-1 {
+  width: 90%;
+}
+  .seccion-index-1 h2 {
+    font-size: 4.7rem;
+  }
+    .seccion-index-1 p {
+      font-size: 2rem;
+      width: 95%;
+    }
+
+.seccion-index-2 {
+  width: 90%;
+}
+  .seccion-index-2 h2 {
+    font-size: 4.7rem;
+  }
+    .seccion-index-2 p {
+      font-size: 2rem;
+      width: 95%;
+    }    
+
+.contenedor-podcast-padre {
+  width: 85%;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 7rem 1fr 1fr;
+  grid-template-areas: 
+    "cabeza-podcast cabeza-podcast cabeza-podcast"
+    "iframe-0 iframe-1 iframe-2"
+    "iframe-3 iframe-4 iframe-5";
+}
+  .contenedor-podcast-padre h2{
+    font-size: 3rem;
+    margin: 0 auto;
+  }
+  .cabeza-podcast {
+    grid-column-start: cabeza-podcast;
+    grid-column-end: cabeza-podcast;
+  }
+
+.seccion-index-3 {
+  width: 90%;
+}
+  .seccion-index-3 h2 {
+    font-size: 4.5rem;
+    text-align: center;
+  }
+    .seccion-index-3 p {
+      font-size: 2rem;
+    }
+  .seccion-index-3 div {
+    width: 50%;
+    margin-bottom: 1rem;
+  }
+
+.seccion-index-4 {
+    width: max-content;
+    display: grid;
+    margin-bottom: 5rem;
+    grid-template-columns: 25rem 25rem;
+    grid-template-rows: 8rem 15rem 15rem;
+      grid-template-areas: 
+      "gifs gifs"
+      "gif-0 gif-1"
+      "gif-2 gif-3";
+}
+  .gifs {
+    grid-column-start: gifs;
+    grid-column-end: gifs;
+  }
+
+  .seccion-index-4 h2 {
+    font-size: 4.5rem;
+  }
+
+/*quary media 1200px de Bibligrafia*/
+
+.seccion-bibliografia-0 {
+  width: 100%;
+}
+
+.seccion-bibliografia-0 h2 {
+  font-size: 10rem;
+
+}
+.seccion-bibliografia-0 p {
+  font-size: 2.5rem;
+}
+
+.seccion-bibliografia-1 {
+  width: 85%;
+}
+  .seccion-bibliografia-1 h2 {
+    font-size: 4rem;
+  }
+    .seccion-bibliografia-1 p {
+      font-size: 2.1rem;
+    }
+
+.seccion-bibliografia-2 {
+  width: 85%;
+}
+  .seccion-bibliografia-2 h2 {
+    font-size: 4rem;
+  }
+    .seccion-bibliografia-2 p {
+      font-size: 2.1rem;
+    }
+
+.seccion-bibliografia-3 {
+  width: 85%;
+}
+  .seccion-bibliografia-3 h2 {
+    font-size: 4rem;
+  }
+    .seccion-bibliografia-3 p {
+      font-size: 2.1rem;
+    }
+
+.seccion-bibliografia-4 {
+  width: 85%;
+}
+  .seccion-bibliografia-4 h2 {
+    font-size: 4rem;
+  }
+    .seccion-bibliografia-4 p {
+      font-size: 2.1rem;
+    }
+
+.seccion-bibliografia-5 {
+  width: 85%;
+  margin-bottom: 5rem;
+}
+  .seccion-bibliografia-5 h2 {
+    font-size: 4rem;
+  }
+    .seccion-bibliografia-5 p {
+      font-size: 2.1rem;
+    }
+
+/*quary Media 1100px fanshots*/
+
+.seccion-fanshots-0 h2 {
+  font-size: 7rem;
+}
+  .seccion-fanshots-0 p {
+    font-size: 3rem;
+    margin-left: 2rem;
+    margin-top: -2rem;
+  }
+
+.seccion-fanshots-1 {
+  gap: 45px;
+  margin-bottom: 1rem;
+  grid-template-columns: 1fr 1fr 1fr ;
+  grid-template-rows: 6rem 1fr 1fr 1fr;
+  grid-template-areas: 
+  "cabeza-fanshot cabeza-fanshot cabeza-fanshot"
+  "img-fanshot-0 img-fanshot-1 img-fanshot-2"
+  "img-fanshot-3 img-fanshot-4 img-fanshot-5"
+  "img-fanshot-6 img-fanshot-7 img-fanshot-8"
+  "img-fanshot-9 img-fanshot-9 img-fanshot-9";
+  }
+  .cabeza-fanshot {
+    grid-column-start: cabeza-fanshot;
+    grid-column-end: cabeza-fanshot;
+  }
+  .img-fanshot-9 {
+    grid-area: img-fanshot-9;
+    grid-column-start: img-fanshot-9;
+    grid-column-end:img-fanshot-9;
+  }
+    .seccion-fanshots-1 h2 {
+      font-size: 3.5rem
+    }
+
+.contenedor-botonera {
+  height: 10rem;
+  border: 3px solid wheat;
+  margin-top: 3rem;
+}
+  .contenedor-botonera button {
+    height: 7rem;
+  }
+
+/*media Quary 1100px fanposts*/ 
+
+.seccion-fanposts-0 h2 {
+  font-size: 7rem;
+}
+  .seccion-fanposts-0 p {
+    font-size: 2rem;
+  }
+
+.seccion-fanposts-1 h3 {
+  font-size: 4rem;
+}
+  .seccion-fanposts-1 h4 {
+    font-size: 2.8rem;
+  }
+    .seccion-fanposts-1 p {
+      font-size: 1.2rem;
+    }
+
+.footer__contenedor h4 {
+  font-size: 2.0rem;
+}
+
+/*Quary media 1100px productos*/
+
+.main-producto h2 {
+  font-size: 5rem;
+  text-align: center;
+  width: 90%;
+  margin: 0 auto;
+}
+  .main-producto p {
+    font-size: 4rem;
+    width: 100%;
+  }
+
+.seccion-producto-0 {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: 16rem 16rem 16rem 16rem;
+  grid-template-rows: 8rem 8rem 8rem;
+  grid-template-areas: 
+  "cabeza cabeza cabeza cabeza" 
+  "torso-0 torso-1 torso-2 torseo-3" 
+  "pie-0 pie-1 pie-2 pie-3";
+}
+  .cabeza {
+    grid-column-start: cabeza;
+    grid-column-end: cabeza;
+  }
+
+.seccion-producto-1 {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: 16rem 16rem 16rem 16rem;
+  grid-template-rows: 8rem 8rem 8rem;
+  grid-template-areas: 
+  "cabeza-1 cabeza-1 cabeza-1 cabeza-1"
+  "tronco-0 tronco-1 tronco-2 tronco-3"
+  "raiz-0 raiz-1 raiz-2 raiz-3";
+}
+  .cabeza-1 {
+    grid-column-start: cabeza-1;
+    grid-column-end: cabeza-1;
+  }
+
+.seccion-producto-2 {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: 16rem 16rem 16rem 16rem;
+  grid-template-rows: 8rem 8rem 8rem;
+  grid-template-areas: 
+  "cabeza-2 cabeza-2 cabeza-2 cabeza-2"
+  "abdomen-0 abdomen-1 abdomen-2 abdomen-3"
+  "pierna-0 pierna-1 pierna-2 pierna-3";
+}
+  .cabeza-2 {
+    grid-column-start: cabeza-2;
+    grid-column-end: cabeza-2;
+  }
+
+/*quary Media 1200px contacto*/
+
+.formulario legend {
+  font-size: 4rem;
+}
+
+.formulario label {
+  font-size: 3.5rem;
+}
+  .formulario input {
+    height: 2rem;
+    width: 75%;
+  }
+  .formulario textarea {
+    width: 45rem;
+  }
+
+.generos p {
+  font-size: 3.5rem;
+}
+  #hombre {
+  margin-top: 1rem;
+  }
+  #mujer {
+    margin-top: 1rem;
+  }
+
+.tallas select {
+  margin-left: 285px;
+  height: 4.5rem;
+  width: 15rem;
+
+}
+
+.checkbox {
+  display: grid;
+  margin-bottom: 1rem;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 2rem 2rem;
+  grid-template-areas: 
+    "checkbox checkbox-input" 
+    "boton boton";
+}
+  .checkbox h3 {
+    font-size: 2rem;
+    text-align: right;
+  }
+  .checkbox button {
+    margin: 1.5rem 0 0 31rem;
+  }
+
+#checkbox {
+  margin: 5px 0 0 -6rem;
+}
+
+/*media Quary footer final resolucion de escritorio*/
+.footer__contenedor {
+  width: 90%;
+  margin-top: 80px;
+  }
+  .footer__contenedor h4 {
+    font-size: 2.3rem;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

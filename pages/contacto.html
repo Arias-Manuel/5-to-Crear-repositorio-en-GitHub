@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Signika+Negative:wght@500&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="/assets/icons8-flappy-dunk-16.png">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Signika+Negative:wght@500&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/cf7f6d1cb0.js" crossorigin="anonymous">
+    </script>
+    <title>Pagina Prototipo</title>
+</head>
+<body class="body-contacto">
+  <header>
+    <nav class="nav">
+      <div class="nav__container">
+        <h1 class= "nav__logo">SAN ANTONIO SPURS</h1>
+        <label for="menu" class="nav__label">
+          <i class="fa-solid fa-bars"></i>
+        </label>
+          <input type="checkbox" id="menu" class="nav__input">
+          <ul class="nav__menu">
+            <li><a href="../index.html">HOME</a></li>
+            <li><a href="bibliografia.html">BIBLIOGRAFIA</a></li>
+            <li><a href="fanshots.html">FAN-SHOTS</a></li>
+            <li><a href="fanposts.html">FAN-POSTS</a></li>
+            <li><a href="productos.html">PRODUCTOS</a></li>
+            
+            <li><a href="contacto.html">CONTACTO</a></li>
+          </ul>
+      </div>
+      <div class="nav__container_desktop">
+        <h1 class= "nav__logo_desktop"><a href="../index.html">SAN ANTONIO SPURS</a></h1>
+          <ul class="nav__menu_desktop">
+            <li><a href="bibliografia.html">BIBLIOGRAFIA</a></li>
+            <li><a href="fanshots.html">FAN-SHOTS</a></li>
+            <li><a href="fanposts.html">FAN-POSTS</a></li>
+            <li><a href="productos.html">PRODUCTOS</a></li>
+            <li><a href="contacto.html">CONTACTO</a></li>
+          </ul>
+      </div>      
+    </nav>
+  </header>
+</body>
+  <main class="main-contacto">
+    <form action="#" class="formulario">
+      <fieldset>
+        <legend>Ponte en Contacto</legend>
+            <label for="Nombre">Nombre:</label>
+                <input type="text" name="nombre" id="nombre" placeholder="Escribe tu nombre" required>      
+            <label for="Apellido">Apellido:</label>
+                <input type="text" name="apellido" id="apellido" placeholder="Escribe tu Apellido" required>               
+            <label for="telefono">Número de telefono:</label>
+              <input type="tel" name="telefono" id="telefono" placeholder="+00000000000" required>        
+            <label for="email">Correo Electronico:</label> 
+              <input type="text" name="emial" id="email" placeholder="email@example.com" required>    
+            <label for="observaciones">Observaciones:</label>
+              <textarea name="observaciones" id="observ" cols="30" rows="10" placeholder= "Ingresa tus dudas/problemas/recomendaciones aqui ;)"></textarea>
+              <div class="generos">
+                <p>Sexo:</p>
+                  <label for="hombre">Hombre</label>
+                    <input type="radio" id="hombre" name="sexo" value="hombre" required />
+                  <label for="mujer">Mujer</label>
+                    <input type="radio" id="mujer" name="sexo" value="mujer" required />
+                </div>
+              <div class="tallas">
+                <label for="tallas">Tallas:</label><select name="tallas">
+                    <optgroup label="Tallas Grandes">
+                  <option value="L">Large</option>
+                    </optgroup>
+                  <optgroup label="Tallas medianas">
+                    <option value="M" selected>Medium</option>
+                    </optgroup>
+                  <optgroup label="Tallas cortas">
+                    <option value="S">Small</option>
+                    </optgroup>
+                  </select>
+              </div>
+              <div class="checkbox">
+               <label for="checkbox"><h3>Acepta terminos y condiciones</h3></label>
+                  <input class="checkbox-input" type="checkbox" id="checkbox" value="unico-box" required> 
+              <p>
+                <button class:"boton" type="submit">Enviar</button>
+              </p>
+              </div>
+      </fieldset>
+    </form>
+    <div class="agradecimientos">
+      <h3>¡GRACIAS POR SU COLABORACION!</h3>
+    </div>
+  </main>
+  <footer>
+    <div class="footer__contenedor">
+      <a href="#"><h4>FACEBOOK</h4></a>
+      <a href="#"><h4>TWITTER</h4></a>
+      <a href="#"><h4>INSTAGRAM</h4></a>
+      <a href="#"><h4>DISCORD</h4></a>
+      <a href="#"><h4>LINKEDIN</h4></a>
+      <a href="contacto.html"><h4>CONTACTO</h4></a>
+    </div>
+  </footer>
+</html>
