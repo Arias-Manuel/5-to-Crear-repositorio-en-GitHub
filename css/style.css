@@ -9,20 +9,16 @@ body {
 }
 
 .body-index {
-  background-image: url(../assets/SpursBackGroundSAS.jpg);
-  background-position: center;
-  background-repeat: round;
-  background-size: cover;
+  background-image: linear-gradient(to left top, #59a9b5, #09a0c5, #0093d6, #0081e0, #6467db, #9f4ec0, #c22f9b, #d2096f, #ce3543, #ba5722, #9e6f13, #7f7f26);
   background-attachment: fixed;
+  background-size: cover;
 }
 
 .body-bibliografia{
-  background-image: url(../assets/spursBackGroudFiestaStyle.jpg);
-  background-position: center;
-  background-repeat: round;
+  background-color: #000000;
+  background-image: linear-gradient(to bottom, #12050d, #361b24, #5f2e31, #854537, #a56336, #ba6c3b, #cf7640, #e57f45, #f96e63, #ff6189, #f961b5, #dc6fe1);
+  background-attachment: fixed;
   background-size: cover;
-  background-attachment: fixed;  
-  width: 100%;
 }
 
 .body-fanshots {
@@ -43,11 +39,11 @@ body {
 }
 
 .body-producto {
-  background-image: url(../assets/backGround-Productos.jpg);
-  background-position: center;
-  background-repeat: round;
-  background-size: cover;
-  background-attachment: fixed; 
+  background-color: #FF9A25;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg %3E%3Cpolygon fill='%23f83e0b' points='1600 160 0 460 0 350 1600 50'/%3E%3Cpolygon fill='%23d40d21' points='1600 260 0 560 0 450 1600 150'/%3E%3Cpolygon fill='%23af1153' points='1600 360 0 660 0 550 1600 250'/%3E%3Cpolygon fill='%238b126c' points='1600 460 0 760 0 650 1600 350'/%3E%3Cpolygon fill='%2365126A' points='1600 800 0 800 0 750 1600 450'/%3E%3C/g%3E%3C/svg%3E");
+  background-attachment: fixed;
+  background-size: cover; 
+  
 }
 
 .body-contacto {
@@ -67,27 +63,42 @@ body {
     display: flex;
     height: 45px;
     width: 100%;
-    margin: 0 auto;
+    top: 0px;
     flex-direction: column;
     align-items: flex-end;
-    position: relative;
+    position: fixed;
     z-index: 1;
-    background-color: #fff;
+    background-image: linear-gradient(to right top, #c654b2, #e05095, #ed5777, #ee685c, #e57c45, #ce9136, #b2a23a, #92b050, #62ba7c, #2ec0aa, #25c0d0, #60bde5);
+    opacity: 0.8;
+    
   }
   .nav__logo {
     font-size: 1.59rem;
     font-family: 'Lobster', cursive;
     position: absolute;
     align-self: flex-start;
+    color: #fff;
+    cursor: pointer;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;   
   }
+    .nav__logo:hover {
+      box-shadow: inset 300px 0 0 0 #14e2e250;;
+    }
+  
+  .nav__label {
+    background-color: rgba(42, 187, 119, 0.719);
+  }
+
   .nav__label i { 
     font-size: 2.7em;
     cursor: pointer;
   }
-
-  .nav__label {
-    background-color: wheat;
-  }
+    .nav__label i:hover {
+      background-color: rgba(144, 206, 28, 0.719);
+    }
+    .nav__label i:active {
+      color: black;
+    }
 
   .nav__input {
     display: none;
@@ -95,10 +106,9 @@ body {
 
   .nav__menu {
     position: fixed;
-    top: 48px;
+    top: 45px;
     bottom: 0;
     background-color: black;
-    opacity: 0.9;
     left: 0;
     height: 550px;
     width: 100%;
@@ -110,30 +120,41 @@ body {
     transition: clip-path 1s ease-in-out;
     position: fixed;
     z-index: 1;
+    opacity: 1;
   }
     .nav__menu li a {
       text-decoration: none;
       font-size: 2rem;
       font-family: 'Lobster', cursive;
-      color: wheat;
+      color: #fff;
+      background:
+      linear-gradient(
+        to right,
+        rgb(177, 14, 155),
+        rgba(100, 200, 200, 1)
+      ),
+      linear-gradient(
+        to right,
+        rgba(255, 0, 0, 1),
+        rgba(255, 0, 180, 1),
+        rgba(0, 100, 200, 1)
+    );
+        background-size: 100% 3px, 0 3px;
+        background-position: 100% 100%, 0 100%;
+        background-repeat: no-repeat;
+        transition: background-size 400ms;
     }
-    .nav__input:checked + .nav__menu{
-      clip-path: circle(100% at center);
-    }
-
-.nav__label img {
-  color: wheat;
-}
+      .nav__menu li a:hover {
+       color: wheat;
+       background-size: 0 3px, 100% 3px;
+      }
+      .nav__input:checked + .nav__menu{
+        clip-path: circle(100% at center);
+      }
 
 .nav__container_desktop {
   display: none;
 }
-
-
-
-
-
-
 
 
 /*Final del Header*/
@@ -142,75 +163,73 @@ body {
 
 .main-index {
   margin: -40px;
-  opacity: 0.9;
-  background-color: black;
   
 }      
   .seccion-index-0 {
     height: auto;
     width: 80%;
-    margin: 0 auto 0 auto;
+    margin: 75px auto 0 auto;
    
   }
    .seccion-index-0 h2 {
       font-size: 1.8rem;
-      color: wheat;
+      color: #fff;
       font-family: 'Bebas Neue', cursive;
       text-align: center;  
       padding: 1rem;
     }
     .seccion-index-0 p {
       font-size: 1.2rem;
-      color: wheat;
+      color: #fff;
       font-family: 'Bebas Neue', cursive;
       text-align: center;
     }
 
   .seccion-index-1 {
     height: auto;
-    width: 85%;
+    width: 80%;
     margin: 20px auto 10px auto;
-    color: wheat;
+    color: #fff;
     display: flex;
     flex-direction: column;
   }
     .seccion-index-1 h2 {
       font-size: 1.7rem;
-      color: wheat;
+      color: #fff;
       font-family: 'Bebas Neue', cursive;
-      border: 5px solid wheat;
+      border: 5px solid #fff;
       padding: 15px;
       text-align: center;
     }
       .seccion-index-1 p {
         font-size: 1.4rem;
-        color: wheat;
+        color: #fff;
         font-family: 'Bebas Neue', cursive;
         width: 65%;
         text-align: start;
         margin: 20px auto 10px auto;
         width: 85%;
-      }
+      }  
 
   .seccion-index-2 {
     height: auto;
-    width: 85%;
+    width: 80%;
     margin: 20px auto 10px auto;
-    color: wheat;
+    color: #fff;
     display: flex;
     flex-direction: column;
   }
     .seccion-index-2 h2 {
       font-size: 1.7rem;
-      color: wheat;
+      color: #fff;
       font-family: 'Bebas Neue', cursive;
-      border: 5px solid wheat;
+      border: 5px solid #fff;
       padding: 15px;
       text-align: center;
     }
       .seccion-index-2 p {
         font-size: 1.4rem;
-        color: wheat;
+        color: #fff;
         font-family: 'Bebas Neue', cursive;
         width: 65%;
         text-align: start;
@@ -221,24 +240,27 @@ body {
   .contenedor-podcast-padre {
     height: auto;
     width: 60%;
-    border: 5px solid wheat;
-    margin: 20px auto 25px auto;
-    padding: 20px;
+    border: 5px solid #fff;
+    margin: 0 auto;
+    padding: 10px;
     display: grid;
     grid-gap: 5px;
   }
     .contenedor-podcast-padre h2 {
       font-size: 1.7rem;
-      color: wheat;
+      color: #fff;
       font-family: 'Bebas Neue', cursive;
       text-align: center;
+      padding: 5px;
     }
-      .contenedor-podcast-padre div {
-        width: 100%;
+      .contenedor-podcast-padre iframe {
+        transition: transform 1.5s;
       }
+        .contenedor-podcast-padre iframe:hover {
+          transform: scale(1.1);
+        }
 
   .seccion-index-3 {
-    background-color: black;
     height: auto;
     width: 80%;
     color: aliceblue;
@@ -248,15 +270,15 @@ body {
   }
     .seccion-index-3 h2 {
       font-size: 1.7rem;
-      color: wheat;
+      color: #fff;
       font-family: 'Bebas Neue', cursive;
-      border: 5px solid wheat;
+      border: 5px solid #fff;
       padding: 15px;
-      text-align: start;
+      text-align: center;
     }
       .seccion-index-3 p {
         font-size: 1.4rem;
-        color: wheat;
+        color: #fff;
         font-family: 'Bebas Neue', cursive;
         width: 85%;
         text-align: center;
@@ -270,21 +292,32 @@ body {
         .seccion-index-3 div img {
           height: 200px;
           width: 100%;
+          transform: skew(20deg);
+          animation: shake 2s infinite;
+          animation-direction: alternate;
         }
+          @keyframes shake {
+            0% {
+              transform: skewY(5deg);
+            }
+            100% {
+              transform: skewY(-5deg);
+            }
+          }
   
   .seccion-index-4 {
     height: auto;
     width: 70%;
-    color: wheat;
+    color: #fff;
     margin: 0 auto 50px auto;
     display: flex;
     flex-direction: column;
   }
     .seccion-index-4 h2 {
       font-size: 1.7rem;
-      color: wheat;
+      color: #fff;
       font-family: 'Bebas Neue', cursive;
-      border: 5px solid wheat;
+      border: 5px solid #fff;
       padding: 15px;
       text-align: center;
     }
@@ -297,15 +330,27 @@ body {
           width: 100%
         }
 
+        .gif-4 {
+          height: 50px;
+          animation: roll 8s infinite;
+          transform: rotate(30deg);
+        }
+          @keyframes roll {
+            0% {
+              transform: rotate(0);
+            }
+            100% {
+              transform: rotate(360deg);
+            }
+          }
+
 
 /*fin del main del Index*/
 /*--------------------------------------------------------------------------------------------------------------------
 /*Inicio del main de la Bibliografia*/
 
 .main-bibliografia {
-  margin-top: -30px;
-  opacity: 0.9;
-  background-color: black;
+  margin-top: 45px;
  
 }
   .seccion-bibliografia-0 {
@@ -319,7 +364,7 @@ body {
       font-family: 'Bebas Neue', cursive;
       font-size: 2.5rem;
       text-align: center;
-      color: wheat;
+      color: #fff;
       padding: 5px;
       
     }
@@ -328,7 +373,7 @@ body {
         text-align: center;
         margin: 0px auto 25px auto;
         font-family: 'Bebas Neue', cursive;
-        color: wheat;
+        color: #fff;
         padding: 1rem;
       }
 
@@ -336,7 +381,7 @@ body {
     height: auto;
     width: 85%;
     margin: -15px auto 35px auto;
-    border: 3px solid wheat;
+    border: 3px solid #fff;
     display: flex;
     flex-direction: column;
   }
@@ -345,8 +390,14 @@ body {
       margin: 10px;
       font-family: 'Bebas Neue', cursive;
       text-align: center;
-      color: wheat;
+      color: #fff;
     }
+      .span-0 {
+        color: rgba(100, 200, 200, 1)
+      }
+      .span-1 {
+        color: rgba(209, 31, 31, 0.767);
+      }
     .seccion-bibliografia-1 div {
       height: 200px;
       width: 80%;
@@ -356,12 +407,16 @@ body {
         height: 100%;
         width: 100%;
         margin: 0 auto;
+        transition: transform 1.5s;
       }
+        .seccion-bibliografia-1 div img:hover {
+          transform: scale(1.1);
+        }
       .seccion-bibliografia-1 p {
         font-size: 1.4rem;
         font-family: 'Bebas Neue', cursive;
         text-align: left;
-        color: wheat;
+        color: #fff;
         padding: 1rem;
       }
 
@@ -371,15 +426,21 @@ body {
     margin: 0 auto 35px auto;
     display: flex;
     flex-direction: column;
-    border: 3px solid wheat;
+    border: 3px solid #fff;
   }
     .seccion-bibliografia-2 h2 {
       font-size: 1.7rem;
       font-family: 'Bebas Neue', cursive;
       text-align: center;
       margin: 20px;
-      color: wheat
+      color: #fff
     }
+      .span-2 {
+        color: rgb(53, 45, 45);
+      }
+      .span-3 {
+        color: rgb(53, 45, 45);
+      }
       .seccion-bibliografia-2 div{
         height: 200px;
         width: 80%;
@@ -389,12 +450,16 @@ body {
         height: 100%;
         width: 100%;
         margin: 0 auto;
+        transition: transform 1.5s;
       }
+        .seccion-bibliografia-2 div img:hover {
+          transform: scale(1.1);
+        }
       .seccion-bibliografia-2 p {
         font-size: 1.4rem;
         font-family: 'Bebas Neue', cursive;
         text-align: left;
-        color: wheat;
+        color: #fff;
         padding: 1rem;
       }
 
@@ -403,7 +468,7 @@ body {
     width: 85%;
     margin: 0 auto 35px auto;
     display: flex;
-    border: 3px solid wheat;
+    border: 3px solid #fff;
     flex-direction: column;
   }
     .seccion-bibliografia-3 h2 {
@@ -411,7 +476,19 @@ body {
       font-family: 'Bebas Neue', cursive;
       text-align: center;
       margin: 20px;
-      color: wheat;
+      color: #fff;
+      }
+      .span-4 {
+        color: rgb(62, 214, 194)
+      }
+      .span-5 {
+        color: #d440c1
+      }
+      .span-6 {
+        color: rgb(75, 66, 66);
+      }
+      .span-7 {
+        color: #FF9A25;
       }
       .seccion-bibliografia-3 div{
         height: 200px;
@@ -422,21 +499,25 @@ body {
         height: 100%;
         width: 100%;
         margin: 0 auto;
+        transition: transform 1.5s;
       }
+        .seccion-bibliografia-3 div img:hover {
+          transform: scale(1.1);
+        }
       .seccion-bibliografia-3 p {
         font-size: 1.4rem;
         font-family: 'Bebas Neue', cursive;
         text-align: left;
-        color: wheat;
+        color: #fff;
         padding: 1rem;
       }
-
+      
   .seccion-bibliografia-4 {
     height: auto;
     width: 85%;
     margin: 0 auto 35px auto;
     display: flex;
-    border: 3px solid wheat;
+    border: 3px solid #fff;
     flex-direction: column;
   } 
     .seccion-bibliografia-4 h2 {
@@ -444,8 +525,17 @@ body {
       font-family: 'Bebas Neue', cursive;
       text-align: center;
       margin: 20px;
-      color: wheat;
+      color: #fff;
     }
+      .span-8 {
+        color: #000000;
+      }
+      .span-9 {
+        color: rgb(75, 66, 66);
+      }
+      .span-10 {
+        color: #000000;
+      }
       .seccion-bibliografia-4 div{
         height: 200px;
         width: 80%;
@@ -455,21 +545,25 @@ body {
         height: 100%;
         width: 100%;
         margin: 0 auto;
+        transition: transform 1.5s;
       }
+        .seccion-bibliografia-4 div img:hover {
+          transform: scale(1.1);
+        } 
       .seccion-bibliografia-4 p {
         font-size: 1.4rem;
         font-family: 'Bebas Neue', cursive;
         text-align: left;
-        color: wheat;
+        color: #fff;
         padding: 1rem;
       }
 
   .seccion-bibliografia-5 {
     height: auto;
     width: 85%;
-    margin: 0 auto 50px auto;
+    margin: 0 auto 10px auto;
     display: flex;
-    border: 3px solid wheat;
+    border: 3px solid #fff;
     flex-direction: column;
   } 
     .seccion-bibliografia-5 h2 {
@@ -477,7 +571,7 @@ body {
       font-family: 'Bebas Neue', cursive;
       text-align: center;
       margin: 20px;
-      color: wheat;
+      color: rgb(31, 28, 28);
     }
       .seccion-bibliografia-5 div{
         height: 200px;
@@ -488,13 +582,17 @@ body {
           height: 100%;
           width: 100%;
           margin: 0 auto;
-          background-color: wheat;
+          background-color: #fff;
+          transition: transform 1.5s;
         }
+          .seccion-bibliografia-5 div img:hover {
+            transform: scale(1.1);
+        } 
       .seccion-bibliografia-5 p {
         font-size: 1.4rem;
         font-family: 'Bebas Neue', cursive;
         text-align: left;
-        color: wheat;
+        color: #fff;
         padding: 1rem;
       }
   
@@ -504,8 +602,8 @@ body {
 
 .main-fanshots {
   opacity: 0.9;
-  background-color: black;
-  margin-top: -30px;
+  background-image: linear-gradient(to bottom, #000000, #2e191b, #572b27, #7e412b, #9f5e29, #b7672c, #cf6f31, #e97736, #ff6258, #ff4f84, #ff4db6, #eb61eb);
+  margin-top: 43px;
 }
   .seccion-fanshots-0 {
     height: auto;
@@ -518,13 +616,13 @@ body {
       font-size: 4.5rem;
       font-family: 'Bebas Neue', cursive;
       text-align: center;
-      color: wheat;
+      color: #fff;
     }
       .seccion-fanshots-0 p {
         font-size: 1.8rem;
         font-family: 'Bebas Neue', cursive;
         margin: 0 auto 0 auto;
-        color: wheat;
+        color: #fff;
         padding: 1rem;
       }
   
@@ -541,22 +639,31 @@ body {
       font-family: 'Bebas Neue', cursive;
       text-align: center;
       padding: 1rem;
-      color: wheat;
-      border: 5px solid wheat;  
+      color: #fff;
+      border: 5px solid #fff;  
     }
         .seccion-fanshots-1 div {
           height: 100%;
           width: auto;
           padding: 10px;
-          border: 5px solid wheat;        
+          border: 5px solid #fff;        
         }
           .seccion-fanshots-1 div img {
             height: 100%;
             width: 100%;
+            transition: transform 1.5s;
           }
+            .seccion-fanshots-1 div img:hover {
+              transform: scale(1.08);
+            }
+
           .seccion-fanshots-1 iframe {
-            height: 100%;
+            height: 232;
             width: 100%;
+            transition: transform 1.5s;
+          }
+          .seccion-fanshots-1 iframe:hover {
+            transform: scale(1.08);
           }
 
     .contenedor-botonera {
@@ -571,22 +678,35 @@ body {
         font-size: 30px;
         font-family: 'Bebas Neue', cursive;
         text-align: center;
-        color: wheat;
-        border: 3px solid wheat;
+        color: #fff;
+        border: 3px solid #fff;
       }
-      .contenedor-botonera button {
-        height: 3rem;
-        width: 8rem;
-        margin: 10px auto 0px auto; 
-      }
-
+        .boton-fanshots {
+          height: 3rem;
+          width: 8rem;
+          margin: 10px auto 0px auto; 
+          border: 2px solid #a78a3b; 
+          padding: 10px; 
+          color: #fff; 
+          text-decoration: none; 
+          text-transform: uppercase; 
+          border-radius: 50px;
+          font-family: 'Bebas Neue', cursive;
+          font-size: 1rem;
+          background-color: #463c3c;
+        }
+          .boton-fanshots:active {
+            background-color: rgb(28, 143, 151);
+            color: #cc6b2b;
+          }
+         
 /*Fin de main FANSHOTS*/
 /*-----------------------------------------------------------------------*/
 /*Incio de Main FANPOSTS*/
 .main-fanposts{
-  margin-top: -35px; 
+  margin-top: 45px; 
   opacity: 0.9;
-  background-color: black;
+  background-image: radial-gradient(circle, #bebbb9, #c1ab9e, #c29c84, #c28c6b, #c17b54, #b4684c, #a65646, #974440, #73343f, #4e2836, #2c1c25, #0d0c0d);
 }
   .seccion-fanposts-0 {
     height: auto;
@@ -599,74 +719,108 @@ body {
       font-size: 4.6rem;
       font-family: 'Bebas Neue', cursive;
       text-align: center;
-      color: wheat;
+      color: #fff;
     }
       .seccion-fanposts-0 p {
         font-size: 1.6rem;
         font-family: 'Bebas Neue', cursive;
-        color: wheat;
+        color: #fff;
       }
        
   .seccion-fanposts-1 {
     height: auto;
     width: 92%;
-    margin: 20px auto 50px auto;
+    margin: 20px auto 37px auto;
     display: flex;
     flex-direction: column;
     background-color: black;
-    border: 3px solid wheat;
+    border: 3px solid #fff;
   }
     .seccion-fanposts-1 h3 {
       font-size: 2.3rem;
       font-family: 'Bebas Neue', cursive;
-      color: wheat;
+      color: #fff;
       padding: 10px;
       text-align: center;
     }
       .seccion-fanposts-1 div {
-        border: 10px solid black;
         height: auto;
         width: auto;
         padding: 20px;
-        margin-bottom: 40px;
-        border: 2px solid wheat;
+        border: 2px solid #fff;
       }
-        .seccion-fanposts-1 h4 {
+  
+       .seccion-fanposts-1 h4 {
           text-align: left;
           font-size: 1.9rem;
           font-family: 'Bebas Neue', cursive;
-          color: wheat;
+          color: #fff;
         }
           .seccion-fanposts-1 div p {
             text-align: left;
             font-size: 1.3rem;
             font-family: 'Bebas Neue', cursive;
-            color: wheat;
+            color: #fff;
             padding: 1rem;
           }
+
+          .boton-fanpost {
+            width: 100%;
+            height: 3.5rem;
+            display: inline-block;
+            border-radius: 1rem;   
+            text-align: center;
+            font-size: 1rem;
+            cursor: pointer;
+            font-family: 'Lobster', cursive;
+            transition: .3s ease all;
+            position: relative;
+            overflow: hidden;
+          }
+          .boton-fanpost span {
+            position: relative;
+            z-index: 2;
+            transition: .3s ease all;
+          }
+            .boton-fanpost::after {
+              content: "";
+              width: 100%;
+              height: 100%;
+              background: #c06f2d;
+              position: absolute;
+              z-index: 1;
+              top: -80px;
+              left: 0;
+              transition: .3s ease-in-out all;
+            }
+
+            .boton-fanpost:hover::after {
+              top: 0;
+            }
+          
 
 /*Fin de Main FANPOSTS*/
 /*------------------------------------------------------------------------*/
 /*Inicio de Main PRODUCTO*/
 
 .main-producto {
- margin-top: -30px;
+ margin-top: 45px;
  opacity: 0.9;
- background-color: black;
+ background-color: black
  
 }
   .main-producto h2 {
-    font-size: 3.5rem;
+    font-size: 4.5rem;
     font-family: 'Bebas Neue', cursive;
-    color: wheat;
+    color: #fff;
     padding: 1rem;
-    border: 5px solid wheat;
+    margin-bottom: -30px;
   }
     .main-producto p {
       font-size: 1.5rem;
       font-family: 'Bebas Neue', cursive;
-      color: wheat;
-      padding: 1rem;  
+      color: #fff;
+      padding: 1rem;
     }
       .seccion-producto-0 {
         height: auto;
@@ -689,9 +843,9 @@ body {
         .seccion-producto-0 p {
           font-size: 3.5em;
           font-family: 'Bebas Neue', cursive;
-          color: wheat;
+          color: #fff;
           text-align: left;
-          border: 5px solid wheat;
+          border: 5px solid #fff;
           padding: 10px;
         }
         .seccion-producto-0 div {
@@ -700,6 +854,10 @@ body {
           .seccion-producto-0 div img {
             width: 100%;
             height: 100%;
+            transition: transform 1.5s;
+          }
+          .seccion-producto-0 div img:hover {
+            transform: scale(1.1);
           }
   
   .seccion-producto-1 {
@@ -723,9 +881,9 @@ body {
     .seccion-producto-1 p {
       font-size: 3.5em;
       font-family: 'Bebas Neue', cursive;
-      color: wheat;
+      color: #fff;
       text-align: left;
-      border: 5px solid wheat;
+      border: 5px solid #fff;
       padding: 10px;
     }
       .seccion-producto-1 div {
@@ -734,12 +892,15 @@ body {
         .seccion-producto-1 div img { 
           width:  100%;
           height: 100%;
+          transition: transform 1.5s;
         }
-  
+        .seccion-producto-1 div img:hover {
+          transform: scale(1.1);
+        }
   .seccion-producto-2 {
     height: auto;
     width: 90%;
-    margin: 20px auto 20px auto;
+    margin: 20px auto 10px auto;
     display: grid;
     grid-gap: 1rem;
     grid-template-columns: 100%;
@@ -757,27 +918,28 @@ body {
     .seccion-producto-2 p {
       font-size: 3.5em;
       font-family: 'Bebas Neue', cursive;
-      color: wheat;
+      color: #fff;
       text-align: left;
-      border: 5px solid wheat;
+      border: 5px solid #fff;
       padding: 10px;
     }
-      .seccion-producto-2 div {
-        width: 100%;
+      .seccion-producto-2 div img {
+        width:  100%;
+        height: 100%;
+        transition: transform 1.5s;
       }
-        .seccion-producto-2 div img {
-          height: 100%;
-          width:  100%;
-        }
+      .seccion-producto-2 div img:hover {
+        transform: scale(1.1);
+      }
 
 /*Final del main producto*/
 /*-----------------------------------------------------------------------------*/
 /*Inicio del main Contacto*/
 
 .main-contacto {
-  margin-top: -30px;
+  margin-top: 45px;
   opacity: 0.9;
-  background-color: black;
+  background-image: linear-gradient(to right top, #c654b2, #e05095, #ed5777, #ee685c, #e57c45, #ce9136, #b2a23a, #92b050, #62ba7c, #2ec0aa, #25c0d0, #60bde5);
 }
   .formulario {
     height: auto;
@@ -793,24 +955,53 @@ body {
       .formulario legend {
         font-size: 1.4rem;
         font-family: 'Bebas Neue', cursive;
-        color: wheat;
+        color: #fff;
         width: 90%;
         margin: 0 auto 0 auto;
       }
+        .formulario legend:hover {
+          text-shadow:
+            0 0 5px rgba(0,178,255,1),
+            0 0 10px rgba(0,178,255,1),
+            0 0 20px rgba(0,178,255,1),
+            0 0 40px rgba(38,104,127,1),
+            0 0 80px rgba(38,104,127,1),
+            0 0 90px rgba(38,104,127,1),
+            0 0 100px rgba(38,104,127,1),
+            0 0 140px rgba(38,104,127,1),
+            0 0 180px rgba(38,104,127,1);
+        }
       .formulario label {
         font-size: 1.1rem;
         font-family: 'Bebas Neue', cursive;
-        color: wheat;
+        color: #fff;
         width: 95%;
-        margin-left: 1rem;
+        margin: auto 10px;
       }
+        .formulario label:hover {
+          text-shadow:
+          0 0 5px rgba(0,178,255,1),
+          0 0 10px rgba(0,178,255,1),
+          0 0 20px rgba(0,178,255,1),
+          0 0 40px rgba(38,104,127,1),
+          0 0 80px rgba(38,104,127,1),
+          0 0 90px rgba(38,104,127,1),
+          0 0 100px rgba(38,104,127,1),
+          0 0 140px rgba(38,104,127,1),
+          0 0 180px rgba(38,104,127,1);
+        }
+
         .formulario input {
           width: 80%;
           margin: 0 auto;
-        }        
+          border-radius: 50px;
+          font-family: 'Righteous', cursive;
+        }
+         
         .formulario textarea {
           width: 70%;
           margin: 0 auto;
+          font-family: 'Righteous', cursive;
             }
             .formulario p {
             margin: 0 auto;
@@ -825,8 +1016,20 @@ body {
       .generos p {
         font-size: 1.1rem;
         font-family: 'Bebas Neue', cursive;
-        color: wheat;
+        color: #fff;
       }
+        .generos p:hover {
+          text-shadow:
+            0 0 5px rgba(0,178,255,1),
+            0 0 10px rgba(0,178,255,1),
+            0 0 20px rgba(0,178,255,1),
+            0 0 40px rgba(38,104,127,1),
+            0 0 80px rgba(38,104,127,1),
+            0 0 90px rgba(38,104,127,1),
+            0 0 100px rgba(38,104,127,1),
+            0 0 140px rgba(38,104,127,1),
+            0 0 180px rgba(38,104,127,1);
+        }
           .generos input {
             width: 30%;
           }
@@ -843,8 +1046,14 @@ body {
             margin-left: 15px;
             width: 140px;
             height: 30px;
-          }
-
+            display: inline-block;
+            border-radius: 1rem;   
+            text-align: center;
+            font-size: 1rem;
+            cursor: pointer;
+            font-family: 'Lobster', cursive;
+          }       
+        
         .checkbox {
           text-align: center;
           display: flex;
@@ -855,35 +1064,75 @@ body {
           .checkbox h3 {
             font-size: 1.6rem;
             font-family: 'Bebas Neue', cursive;
-            color: wheat;
+            color: #fff;
           }
-          .checkbox button{          
+          .checkbox button {
             height: 45px;
             width: 200px;
-            margin-bottom: 5px;
+            margin-bottom: 20px;
+            display: inline-block;
+            border-radius: 1rem;
+            text-align: center;
+            font-size: 1rem;
+            cursor: pointer;
+            font-family: 'Lobster', cursive;
+            transition: .3s ease all;
+            position: relative;
+            overflow: hidden;
           }
+            .checkbox span {
+              position: relative;
+              z-index: 2;
+              transition: .3s ease all;
+            }
+            .checkbox button::after {
+              content: "";
+              width: 100%;
+              height: 100%;
+              border-bottom: 80px solid #e4712e;
+              border-right: 40px solid transparent;
+              position: absolute;
+              z-index: 1;
+              top: -50px;
+              left: calc(-100% - 50px);
+              transition: .3s ease-in-out all;
+            }
+              .checkbox button:hover::after {
+                left: 0;
+              }
+            
             .checkbox input{
               margin-bottom: 20px;
             }
 
   .agradecimientos {
-    width: 100%;
+    width: auto;
     height: auto;
     font-size: 2rem;
     font-family: 'Bebas Neue', cursive;
-    border: 5px solid wheat;
+    border: 5px solid #fff;
     display: flex;
     flex-direction: row;
     margin-top: 2rem;
-    margin-bottom: 1rem;
     justify-content: center;
   }
     .agradecimientos h3 {
       text-align: center;
-      color: wheat;
+      color: #fff;
       padding: 2rem;
     }
-    
+      .agradecimientos h3:hover {
+        text-shadow:
+          0 0 5px rgba(0,178,255,1),
+          0 0 10px rgba(0,178,255,1),
+          0 0 20px rgba(0,178,255,1),
+          0 0 40px rgba(38,104,127,1),
+          0 0 80px rgba(38,104,127,1),
+          0 0 90px rgba(38,104,127,1),
+          0 0 100px rgba(38,104,127,1),
+          0 0 140px rgba(38,104,127,1),
+          0 0 180px rgba(38,104,127,1);
+      }
           
 /*Final del main Contacto*/
 /*-----------------------------------------------------------------------*/
@@ -893,30 +1142,39 @@ footer{
   width: 100%;
   height: auto;
   opacity: 0.9;
-  background-color: black;
+  background-image: radial-gradient(circle, #080808, #2e191b, #141313, #7e412b, #9f5e29, #b5652a, #cc6b2b, #e4712e, #f9544d, #ff3475, #fa26a5, #d83fd8);
+  
 }
  .footer__contenedor {
   width: auto;
   padding: 1rem;
   margin: 0 auto;
-  border: 5px solid wheat;
+  border: 5px solid #fff;
   display: grid;
   grid-template-columns: 33% 33% 33%;
   grid-template-areas: 
-    "FACEBOOK TWITTER INSTAGRAM"
-    "DISCORD LINKEDIN CONTACTO";   
+    "Facebook Twitter Instagram"
+    "Discord Linkedin Contacto";  
  }
   .footer__contenedor a {
-    text-decoration: none
+    text-decoration: none;
+    margin: 0 auto;
+    color: #fff;
   }
+    .footer__contenedor a:hover {
+      color: rgb(62, 214, 194);
+    }
+
     .footer__contenedor h4 {
       font-size: 1.3rem;
       font-family: 'Bebas Neue', cursive;
       list-style: none;
-      color: wheat;
+      color: #fff;
       text-align: center;
     }
-
+  .footer__contenedor__desktop {
+    display: none;
+  }
 /*Final del Footer*/
 /*---------------------------------------------*/
 /*Inicio de la media Quary 475px*/    
@@ -1524,11 +1782,13 @@ footer{
   display: flex;
   justify-content: space-between;
   align-items: center; 
-  position: relative;
-  background-color: black;
-  border: 2px solid wheat;
-  margin-bottom: 20px;
+  position: fixed;
+  background-image: linear-gradient(to right top, #c654b2, #e05095, #ed5777, #ee685c, #e57c45, #ce9136, #b2a23a, #92b050, #62ba7c, #2ec0aa, #25c0d0, #60bde5);
+  opacity: 0.8;
+  border: 2px solid #fff;
   z-index: 1;
+  top: 0;
+
   }
   .nav__logo_desktop a {
     font-size: 1.5rem;
@@ -1536,8 +1796,14 @@ footer{
     cursor: pointer;
     color: #fff;
     text-decoration: none;
-  
+    transition: all 0.3s ease 0s;
   }
+    .nav__logo_desktop a:hover{
+      background-color: #ca851d;
+    }
+    .nav__logo_desktop a:active{
+      color: rgb(194, 69, 167);
+    }
   .nav__menu_desktop li {
     list-style: none;
     display: inline-block;
@@ -1549,11 +1815,16 @@ footer{
       text-decoration: none;
       color: #fff;
       padding: 5px;
-      transition: all 0.3s ease 0s;
+      box-shadow: inset 0 0 0 0 #c58134;
+      transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
     }
-    .nav__menu_desktop li a:hover {
-      color: wheat;
-    }
+      .nav__menu_desktop li a:hover {
+        color: #fff;
+        box-shadow: inset 200px 0 0 0 #c151cf;;
+      }
+      .nav__menu_desktop li a:active{
+        color: whitesmoke;
+      }
 }
 
 /*fin del nav desktop*/
@@ -1565,7 +1836,7 @@ footer{
 }
   .seccion-index-0 h2 {
     font-size: 4.0rem;
-    margin-top: 10px;
+    margin-top: 8rem;
   }
 
 .seccion-index-1 h2 {
@@ -1614,19 +1885,28 @@ footer{
   grid-template-areas: 
     "gifs gifs"
     "gif-0 gif-1"
-    "gif-2 gif-3";
+    "gif-2 gif-3"
+    "gif-4 gif-4";
 }
   .gifs {
     grid-column-start: gifs;
     grid-column-end: gifs;
   }
+  .gif-4 {
+    grid-area: gif-4;
+    grid-row-start: gif-4;
+    grid-row-end: gif-4;
+    height: 100px;
+  }
+
   .seccion-index-4 h2{
   font-size: 3.8rem;
   }
 
-/*Quary media de 768px de Bibliografia*/
+/*Quary media de 726px de Bibliografia*/
 
 .seccion-bibliografia-0 {
+  margin-top: 6.3rem;
   width: 100%;
 }
   .seccion-bibliografia-0 h2 {
@@ -1677,7 +1957,7 @@ footer{
 
 .seccion-bibliografia-5 {
   width: 80%;
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
 }
   .seccion-bibliografia-5 h2 {
     font-size: 3rem;
@@ -1686,10 +1966,11 @@ footer{
       font-size: 2rem;
     }
 
-/*media Quary (768px) FANSHOTS*/
+/*media Quary (726px) FANSHOTS*/
 
 .seccion-fanshots-0 h2 {
   font-size: 6rem;
+  margin-top: 3.8rem;
 }
   .seccion-fanshots-0 p {
     margin-top: -1.5rem;
@@ -1731,11 +2012,11 @@ footer{
 }
 
 
-/*media Quary (768px) FANPOSTS*/
+/*media Quary (726px) FANPOSTS*/
 
 .seccion-fanposts-0 {
   width: 100%;
- 
+  margin-top: 6.3rem;
 }
 .seccion-fanposts-0 h2 {
   font-size: 7rem;
@@ -1757,15 +2038,17 @@ footer{
       font-size: 1.6rem;
     }
 
-/*quary Media (768px) de Productos*/
+/*quary Media (726px) de Productos*/
 
 
 .main-producto h2 {
   font-size: 4.8rem;
-  text-align: center
+  text-align: center;
+  margin-top: 6.3rem;
 } 
   .main-producto p {
     font-size: 3.5rem;
+    text-align: center;
   }
 
 .seccion-producto-0 {
@@ -1817,11 +2100,11 @@ footer{
     grid-column-end: cabeza-2;
   }
 
-/*quary Media (768px) de Contacto*/
+/*quary Media (726px) de Contacto*/
 
 .formulario legend {
   font-size: 3.5rem;
-  margin-top: 1rem;
+  margin-top: 4.2rem;
 }
 
   .formulario label {
@@ -1860,6 +2143,7 @@ footer{
   }
     #checkbox {
       height: 2rem;
+      margin-top: 28px;
     }
       .checkbox h3 {
         font-size: 2rem;
@@ -1868,12 +2152,43 @@ footer{
           margin: 1rem 0 1rem 79%;
         }
 
+
+/*footer escritorio (726px)*/
+
 .footer__contenedor {
-  grid-gap: 1rem;
+  display: none;
 }
-  .footer__contenedor h4 {
-    font-size: 2.1rem;
+
+.footer__contenedor__desktop {
+  width: auto;
+  padding: 1rem;
+  margin: 0 auto;
+  border: 5px solid #fff;
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  grid-template-areas: 
+    "Facebook Twitter Instagram"
+    "Discord Linkedin Contacto";  
+ }
+ .footer__contenedor__desktop a {
+    text-decoration: none;
+    margin: 0 auto;
+    color: #fff;
   }
+  .footer__contenedor__desktop a:hover {
+      color: rgb(62, 214, 194);
+    }
+
+    .footer__contenedor__desktop h4 {
+      font-size: 1.3rem;
+      font-family: 'Bebas Neue', cursive;
+      list-style: none;
+      color: #fff;
+      text-align: center;
+    }
+      .footer__contenedor__desktop h4:hover {
+        color: rgb(62, 214, 194);
+      }
 
 }
 
@@ -1884,6 +2199,7 @@ footer{
 
 .seccion-index-0 {
   width: 95%;
+  margin-top: 7.5rem;
 }
   .seccion-index-0 h2 {
     font-size: 5.5rem;
@@ -1957,11 +2273,18 @@ footer{
       grid-template-areas: 
       "gifs gifs"
       "gif-0 gif-1"
-      "gif-2 gif-3";
+      "gif-2 gif-3"
+      "gif-4 gif-4";
 }
   .gifs {
     grid-column-start: gifs;
     grid-column-end: gifs;
+  }
+  .gif-4 {
+    grid-area: gif-4;
+    grid-row-start: gif-4;
+    grid-row-end: gif-4;
+    margin: 0 auto;
   }
 
   .seccion-index-4 h2 {
@@ -1972,6 +2295,7 @@ footer{
 
 .seccion-bibliografia-0 {
   width: 90%;
+  margin-top: 5.9rem;
 }
   .seccion-bibliografia-0 h2 {
     font-size: 8rem;
@@ -2035,6 +2359,7 @@ footer{
 
 .seccion-fanshots-0 h2 {
   font-size: 7rem;
+  margin-top: 4.0rem;
 }
   .seccion-fanshots-0 p {
     font-size: 3rem;
@@ -2076,7 +2401,7 @@ footer{
 
 .contenedor-botonera {
   height: 10rem;
-  border: 3px solid wheat;
+  border: 3px solid #fff;
 }
 
 .contenedor-botonera button {
@@ -2088,6 +2413,7 @@ footer{
 
 .seccion-fanposts-0 {
   width: 93%;
+  margin-top: 5.9rem;
 }
   .seccion-fanposts-0 h2 {
     font-size: 7rem;
@@ -2108,15 +2434,17 @@ footer{
     }
 
 
-/*Quary media 1024 productos*/
+/*Quary media 1024px productos*/
 
 .main-producto h2 {
   font-size: 5rem;
+  margin-top: 5.9rem;
+  text-align: center;
 }
   .main-producto p {
     font-size: 3rem;
+    text-align: center;
   }
-
 
 .seccion-producto-0 {
   display: grid;
@@ -2167,8 +2495,13 @@ footer{
 
 /*quary Media 1024 de Contacto*/
 
+.nav__container_desktop {
+  background-image: linear-gradient(to right top, #c654b2, #e05095, #ed5777, #ee685c, #e57c45, #ce9136, #b2a23a, #92b050, #62ba7c, #2ec0aa, #25c0d0, #60bde5);
+}
+
 .formulario legend {
   font-size: 4rem;
+  margin-top: 3.5rem;
 }
 
 .formulario label {
@@ -2208,12 +2541,41 @@ footer{
     margin: 1.5rem 0 0 28rem;
   }
 
-.footer__contenedor {
-  margin-top: 80px;
+
+  .footer__contenedor {
+    display: none;
   }
-  .footer__contenedor h4 {
-    font-size: 2.3rem;
-  }
+  
+  .footer__contenedor__desktop {
+    width: auto;
+    padding: 1rem;
+    margin: 0 auto;
+    border: 5px solid #fff;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-areas: 
+      "Facebook Twitter Instagram"
+      "Discord Linkedin Contacto";  
+   }
+   .footer__contenedor__desktop a {
+      text-decoration: none;
+      margin: 0 auto;
+      color: #fff;
+    }
+    .footer__contenedor__desktop a:hover {
+        color: rgb(62, 214, 194);
+      }
+  
+      .footer__contenedor__desktop h4 {
+        font-size: 1.3rem;
+        font-family: 'Bebas Neue', cursive;
+        list-style: none;
+        color: #fff;
+        text-align: center;
+      }
+        .footer__contenedor__desktop h4:hover {
+          color: rgb(62, 214, 194);
+        }
 
 }
 /*Fin de la Quary media 1024px*/
@@ -2223,9 +2585,13 @@ footer{
 /*Quary media index*/
 
 @media only screen and (min-width: 1135px) {
+.nav__container_desktop {
+  background-image: linear-gradient(to right top, #c654b2, #e05095, #ed5777, #ee685c, #e57c45, #ce9136, #b2a23a, #92b050, #62ba7c, #2ec0aa, #25c0d0, #60bde5);
+  }
   
 .seccion-index-0 {
   width: 95%;
+  margin-top: 7.7rem;
 }
   .seccion-index-0 h2 {
     font-size: 5rem;
@@ -2299,21 +2665,44 @@ footer{
       grid-template-areas: 
       "gifs gifs"
       "gif-0 gif-1"
-      "gif-2 gif-3";
+      "gif-2 gif-3"
+      "gif-4 gif-4";
 }
   .gifs {
     grid-column-start: gifs;
     grid-column-end: gifs;
+  }
+  .gif-4 {
+    grid-area: gif-4;
+    grid-row-start: gif-4;
+    grid-row-end: gif-4;
   }
 
   .seccion-index-4 h2 {
     font-size: 4.5rem;
   }
 
-/*quary media 1200px de Bibligrafia*/
+  .pelota {
+    background-color: rgb(143, 38, 38);
+  }
+    .pelota img {
+      width: 15%;
+      height: 8rem;
+      position: relative;
+      animation: rebota 1s alternate infinite ease-out;
+      margin-top: 1rem;
+      margin-left: 3.5rem;
+/*       Animacion                           */
+      animation-name: movimiento ;
+        animation-duration: 5s;
+  }
+
+
+/*quary media (1135px) de Bibligrafia*/
 
 .seccion-bibliografia-0 {
   width: 100%;
+  margin-top: 6.2rem;
 }
 
 .seccion-bibliografia-0 h2 {
@@ -2366,7 +2755,7 @@ footer{
 
 .seccion-bibliografia-5 {
   width: 85%;
-  margin-bottom: 5rem;
+  margin-bottom: 2rem;
 }
   .seccion-bibliografia-5 h2 {
     font-size: 4rem;
@@ -2375,10 +2764,11 @@ footer{
       font-size: 2.1rem;
     }
 
-/*quary Media 1100px fanshots*/
+/*quary Media (1135px) fanshots*/
 
 .seccion-fanshots-0 h2 {
   font-size: 7rem;
+  margin-top: 4.0rem;
 }
   .seccion-fanshots-0 p {
     font-size: 3rem;
@@ -2413,17 +2803,19 @@ footer{
 
 .contenedor-botonera {
   height: 10rem;
-  border: 3px solid wheat;
+  border: 3px solid #fff;
   margin-top: 3rem;
+  margin-bottom: 1rem;
 }
   .contenedor-botonera button {
     height: 7rem;
   }
 
-/*media Quary 1100px fanposts*/ 
+/*media Quary (1135px) fanposts*/ 
 
 .seccion-fanposts-0 h2 {
   font-size: 7rem;
+  margin-top: 4.0rem;
 }
   .seccion-fanposts-0 p {
     font-size: 2rem;
@@ -2443,17 +2835,17 @@ footer{
   font-size: 2.0rem;
 }
 
-/*Quary media 1100px productos*/
+/*Quary media (1135px) productos*/
 
 .main-producto h2 {
   font-size: 5rem;
   text-align: center;
-  width: 90%;
-  margin: 0 auto;
+  width: 92%;
+  margin-top: 6.3rem;
 }
   .main-producto p {
     font-size: 4rem;
-    width: 100%;
+    width: 95%;
   }
 
 .seccion-producto-0 {
@@ -2501,10 +2893,16 @@ footer{
     grid-column-end: cabeza-2;
   }
 
-/*quary Media 1200px contacto*/
+
+/*quary Media (1135px) contacto*/
+
+.formulario fieldset {
+  margin-top: 6.5rem;
+}
 
 .formulario legend {
   font-size: 4rem;
+  
 }
 
 .formulario label {
@@ -2529,10 +2927,9 @@ footer{
   }
 
 .tallas select {
-  margin-left: 285px;
+  margin-left: 320px;
   height: 4.5rem;
   width: 15rem;
-
 }
 
 .checkbox {
@@ -2549,7 +2946,7 @@ footer{
     text-align: right;
   }
   .checkbox button {
-    margin: 1.5rem 0 0 31rem;
+    margin: 1.5rem 0 0 35rem;
   }
 
 #checkbox {
@@ -2557,45 +2954,39 @@ footer{
 }
 
 /*media Quary footer final resolucion de escritorio*/
-.footer__contenedor {
-  width: 90%;
-  margin-top: 80px;
-  }
-  .footer__contenedor h4 {
-    font-size: 2.3rem;
-  }
 
+.footer__contenedor {
+  display: none;
 }
 
+.footer__contenedor__desktop {
+  width: auto;
+  padding: 1rem;
+  margin: 0 auto;
+  border: 5px solid #fff;
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  grid-template-areas: 
+    "Facebook Twitter Instagram"
+    "Discord Linkedin Contacto";  
+ }
+ .footer__contenedor__desktop a {
+    text-decoration: none;
+    margin: 0 auto;
+    color: #fff;
+  }
+  .footer__contenedor__desktop a:hover {
+      color: rgb(62, 214, 194);
+    }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    .footer__contenedor__desktop h4 {
+      font-size: 1.3rem;
+      font-family: 'Bebas Neue', cursive;
+      list-style: none;
+      color: #fff;
+      text-align: center;
+    }
+      .footer__contenedor__desktop h4:hover {
+        color: rgb(62, 214, 194);
+      }
+}

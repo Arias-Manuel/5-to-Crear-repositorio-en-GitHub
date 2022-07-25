@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Signika+Negative:wght@500&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="/assets/icons8-flappy-dunk-16.png">
     <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Signika+Negative:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/cf7f6d1cb0.js" crossorigin="anonymous">
     </script>
     <title>Pagina Prototipo</title>
@@ -69,7 +70,7 @@
                     <input type="radio" id="mujer" name="sexo" value="mujer" required />
                 </div>
               <div class="tallas">
-                <label for="tallas">Tallas:</label><select name="tallas">
+                <label for="tallas"><span>Tallas:</span></label><select name="tallas">
                     <optgroup label="Tallas Grandes">
                   <option value="L">Large</option>
                     </optgroup>
@@ -85,7 +86,7 @@
                <label for="checkbox"><h3>Acepta terminos y condiciones</h3></label>
                   <input class="checkbox-input" type="checkbox" id="checkbox" value="unico-box" required> 
               <p>
-                <button class:"boton" type="submit">Enviar</button>
+                <button class:"boton-contacto" type="submit"><span class="span-contacto">Enviar</span></button>
               </p>
               </div>
       </fieldset>
@@ -96,12 +97,20 @@
   </main>
   <footer>
     <div class="footer__contenedor">
-      <a href="#"><h4>FACEBOOK</h4></a>
-      <a href="#"><h4>TWITTER</h4></a>
-      <a href="#"><h4>INSTAGRAM</h4></a>
-      <a href="#"><h4>DISCORD</h4></a>
-      <a href="#"><h4>LINKEDIN</h4></a>
-      <a href="contacto.html"><h4>CONTACTO</h4></a>
+      <a href="#"><i class="fa-brands fa-facebook facebook"></i></a>
+      <a href="#"><i class="fa-brands fa-twitter twitter"></i></a>
+      <a href="#"><i class="fa-brands fa-instagram instagram"></i></a>
+      <a href="#"><i class="fa-brands fa-discord discrod"></i></a>
+      <a href="#"><i class="fa-brands fa-linkedin linkedin"></i></a>
+      <a href="./pages/contacto.html"><i class="fa-solid fa-address-book contacto"></i></a>
     </div>
+    <div class="footer__contenedor__desktop">
+      <a href="#"><i class="fa-brands fa-facebook facebook"></i><h4>FACEBOOK</h4></a>
+      <a href="#"><i class="fa-brands fa-twitter twitter"></i><h4>TWITTER</h4></a>
+      <a href="#"><i class="fa-brands fa-instagram instagram"></i><h4>INSTAGRAM</h4></a>
+      <a href="#"><i class="fa-brands fa-discord discrod"></i><h4>DISCORD</h4></a>
+      <a href="#"><i class="fa-brands fa-linkedin linkedin"></i><h4>LINKEDIN</h4></a>
+      <a href="./pages/contacto.html"><i class="fa-solid fa-address-book contacto"></i><h4>CONTACTO</h4></a>
+  </div>
   </footer>
 </html>
